@@ -1,0 +1,33 @@
+﻿.main
+{
+    background-color:#bbbbbb;
+    color:#2f3343;
+    font-size:large;
+    font-family:Comic Sans MS;
+}
+
+.footer
+{
+    background-color:#2f3343;
+    margin-bottom:0px;
+    color:#bbbbbb;
+    font-weight:bold;
+}
+
+/* navbar toggle buttton hover*/
+.navbar-inverse .navbar-toggle:hover
+ {
+     background-color:#450909;
+ }
+ 
+ /* navbar toggle buttton focus*/
+.navbar-inverse .navbar-toggle
+{
+    background-color:#bbbbbb;
+}
+
+/* navbar toggle buttton active*/
+.navbar-inverse .navbar-toggle:focus
+{
+    background-color:#450909;
+}
