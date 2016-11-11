@@ -2,6 +2,19 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <title>User Signup</title>
+    <script>
+        function Conlength(source, args)
+         {
+             if (are.length == 10)
+             {
+                args.IsValid = true;
+              }
+            else
+             {
+                args.IsValid = false;
+             }
+        } 
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="col-md-6 col-md-offset-3">
@@ -26,6 +39,11 @@
 
         <div class="form-group">
             <asp:Label ID="lblContact" runat="server" Text="Contact Number:"></asp:Label>
+            <asp:CustomValidator ID="contactCustomValidator1" runat="server" 
+                ClientValidationFunction="Conlength" ControlToValidate="txtContact" 
+                Display="Dynamic" ErrorMessage="contact number must contain 10 charactors" ForeColor="Red" 
+                onservervalidate="contactCustomValidator1_ServerValidate" 
+                SetFocusOnError="True">contact number must contain 10 charactors</asp:CustomValidator>
             <asp:RequiredFieldValidator ID="ContactRequiredFieldValidator1" runat="server" 
                 ControlToValidate="txtContact" Display="Dynamic" 
                 ErrorMessage="contact number required" ForeColor="Red" SetFocusOnError="True">contact number required</asp:RequiredFieldValidator>

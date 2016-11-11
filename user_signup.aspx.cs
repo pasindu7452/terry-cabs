@@ -11,5 +11,16 @@ public partial class Default2 : System.Web.UI.Page
     {
 
     }
-   
+
+    protected void contactCustomValidator1_ServerValidate(object source, ServerValidateEventArgs args)
+    {
+        if (args.Value.Length == 10)
+        {
+            args.IsValid = true;
+        }
+        else
+        {
+            args.IsValid = false;
+        }
+    }
 }
