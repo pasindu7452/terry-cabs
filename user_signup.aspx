@@ -17,8 +17,8 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<div class="row">
-    <div class="col-md-6 col-md-offset-3">
+
+<div class=" col-md-4 col-md-offset-4">
        <center><h1>User Signup</h1></center>
         <div class="form-group">
             <asp:Label ID="lblFname" runat="server" Text=" First Name:"></asp:Label>
@@ -111,6 +111,7 @@
 
         <br />    <br />
     </div>
-</div>
+   
+
 </asp:Content>
 
