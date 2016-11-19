@@ -1,16 +1,57 @@
-﻿.main
-{
-    background-color:#bbbbbb;
-    color:#2f3343;
-    text-align:justify;
+body{
+    background-color:#ccccff;
+    width:initial;
 }
 
-.footer
-{
-    background-color:#2f3343;
+.footer{
+    position:relative;
+    top:30px;
+    bottom:0px;
+    right:0px;
+    left:0px;
+    background-color:#003366;
     margin-bottom:0px;
-    color:#bbbbbb;
+    color:#fffffb;
     font-weight:bold;
+    width: 100%;
+    min-height: 240px;
+    max-height: 1500px;
+    
+}
+
+.footgrid{
+    position: relative;
+
+    padding-right:0px;
+    padding-left: 10px;
+}
+
+.footernav >li >a{
+  border-right:0px;
+}
+
+.socialmedialog >li >a:hover{
+    background-color: transparent;
+}
+
+.hotlinetext{
+    font-family: Calibri;
+    font-size: 35px;
+    color:#ffffff;
+    
+}
+
+.hotlinetextspan{
+    color:#ffcc00;
+}
+.cattext{
+    font-family: Calibri;
+    font-size: 20px;
+    color: #bbbbbb;
+}
+
+.catlogosec{
+    padding-left:10px;
 }
 
 /* navbar toggle buttton hover*/
