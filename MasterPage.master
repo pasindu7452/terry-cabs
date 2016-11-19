@@ -4,53 +4,75 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="custom_css/custom_css.css" rel="stylesheet" type="text/css" />
-    <link href="custom_css/navbar_customcss.css" rel="stylesheet" type="text/css" />
-    <asp:ContentPlaceHolder id="head" runat="server">
-    <title></title>
-    </asp:ContentPlaceHolder>
-</head>
+
+        <!--Styling-->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="custom_css/custom_css.css" rel="stylesheet" type="text/css" />
+        <link href="custom_css/navbar_customcss.css" rel="stylesheet" type="text/css" />
+        <!--End of Styling-->
+
+        <!--Scripts-->
+        <script src="jquery/jquery.js" type="text/javascript"></script>
+        <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <!--End of Scripts-->
+
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+        <title>Terry Cabs</title>
+
+    </head>
 <body>
     <form id="form1" runat="server">
-
-        <!--nav bar-->
+        <!--Navigation Bar-->
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                         <button type="button" class="navbar-toggle collapsed main" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                 <span class="sr-only">Toggle navigation</span>
-                                 <span class="icon-bar"></span>
-                                 <span class="icon-bar"></span>
-                                 <span class="icon-bar"></span>
-                         </button>
-                         <a class="navbar-brand" href="#">TerryCabs</a>
-                    </div>
 
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                             <li><a href="#">Home <span class="sr-only">(current)</span></a></li>
-                             <li><a href="#">Vehicles</a></li>
-                             <li><a href="#">About Us</a></li>
-                             <li><a href="#">Contact Us</a></li>
-                        </ul>
-    
-                      <ul class="nav navbar-nav navbar-right">
-                         <li><a href="#">Shopping Cart</a></li>
-                         <li class="dropdown">
-                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sign Up <span class="caret"></span></a>
+                <!--Navigation Bar Items Grouping Section For Mobile Devices-->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed main" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><center>TERRY CABS<br/><sub class="homesub">Home</sub></center></a>
+                </div>
+                <!--End of Navigation Bar Items Grouping Section For Mobile Devices-->
+
+                <!--Navigaton Bar Items-->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Packages <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">Vehicles</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Profile</a></li>
-                                    <li><a href="#">Sign In</a></li>
-                                    <li><a href="#">Log Out</a></li>
+                                    <li><a href="#">Sign Out</a></li>
                                 </ul>
-                         </li>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sign In <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Sign In</a></li>
+                                    <li><a href="http://localhost:4700/SignUp.apx">Sign Up</a></li>
+                                </ul>
+                        </li>
                     </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-         </nav>
+                </div><!-- /.navbar-collapse -->
+                <!--Navigaton Bar Items-->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <!--Navigation Bar-->
+
+        
          <br /><br />
          <!-- content -->
         <div class="row main">
@@ -59,37 +81,97 @@
              </asp:ContentPlaceHolder> 
         </div>
 
-        <!-- footer-->
-      
-        <div class="row">
-        <div class="navbar navbar-bottom footer">
+         <!--Footer Section-->
+        <div class="container-fluid footer">
+            <nav class="navbar-footer">
+                 
+                <!--First Row-->
+                <div class="row">
+                    <!--Terry Cabs Logo-->
+                    <div class="col-md-2 footgrid">
+                        <center>
+                            <img  alt="TerryCabsLogoMissing!"src="images\logo\TerryCabsLogo.png" height="auto" width="200px"/><br/>
+                        </center>
+                    </div>
+                    <!--End of Terry Cabs Logo-->
 
-            <!--terrycab logo and developerinfo-->
-            <div class="col-md-4">
-                <br />
-               <img src="images/logo/logo.png" />
-               <br />
-               Contact Catalyst solutions for your application requirements
-            </div>
+                    <!--Terry Cabs Social Media Links-->
+                    <div class="col-md-2 footgrid">
+                    <br/>
+                        <center>
+                            <ul class="nav navbar-nav navbar-left footernav">
+                                <li><a href="#"><img alt="Faceeook" src="images/logo/facebook.png" height="40px" width="40px"/></a></li>
+                                <li><a href="#"><img alt="Twiiter" src="images/logo/twitter.png" height="40px" width="40px"/></a></li>
+                                <li><a href="#"><img alt="GooglePlus" src="images/logo/googleplus.png" height="40px" width="40px"/></a></li>
+                            </ul>
+                        </center>
+                    </div>
+                    <!--End of Terry Cabs Social Media Links-->
 
-            <!-- links-->
-            <div class="col-md-4">
-                <ul >
-                    <li>link 1</li>
-                    <li>link 1</li>
-                    <li>link 1</li>
-                    <li>link 1</li>
+                    <!--Footer Navigation Section-->
+                    <div class="col-md-4 footgrid">
+                    <br/>
+                        <center>
+                            <ul class="nav navbar-nav navbar-left footernav">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Packages</a></li>
+                                <li><a href="#">Vehicles</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </center>
+                    </div>
+                    <!--End of Footer Navigation Section-->
 
-                </ul>
-            </div>
+                    <!--Terry Cabs Hotline Section-->
+                    <div class="col-md-4 footgrid">
+                    <br/>
+                        <center>
+                            <p class="hotlinetext">
+                                <span class="hotlinetextspan">HOT</span>LINE  <span class="hotlinetextspan">0114</span> 871 871
+                            </p>
+                        </center>
+                    </div>
+                    <!--End of Terry Cabs Hotline Section-->
+                </div>
+                <!--End of First Row-->
 
-            <!-- fb link and other-->
-            <div class="col-md-4">
-               <p>Facebok</p>
-               <p>twitter</p>
-            </div>
+                <!--Second Row-->
+                <div class="row">
+                    <!--Copyright Statements-->
+                    <div class="col-md-8 footgrid"><br/><br/>
+                        <center>
+                            <p class="cattext">All Rights Reserved &copy 2016 Terry Cabs & Rent a Car.</p> 
+                            <p class="cattext">Website Designed by &copy 2016 Catalyst Software Solutions.</p>
+                        </center>
+                    </div>
+                    <!--End of Copyright Statements-->
+
+                    <!--Developer Logo-->
+                    <div class="col-md-2 footgrid">
+                        <center>
+                            <img alt="CatalystLogMissing!" src="images/logo/catlogo.png" width="180" height="auto"/>
+                        </center>
+                    </div>
+                    <!--End of Developer Logo-->
+
+                    <!--Developer Social Media Links-->
+                    <div class="col-md-2 footgrid">
+                    <br/>
+                        <center>
+                            <ul class="nav navbar-nav navbar-left footernav">
+                                <li><a href="#"><img alt="Facebook" src="images/logo/facebook.png" height="40px" width="40px"/></a></li>
+                                <li><a href="#"><img alt="Twitter" src="images/logo/twitter.png" height="40px" width="40px"/></a></li>
+                                <li><a href="#"><img alt="GooglePlus" src="images/logo/googleplus.png" height="40px" width="40px"/></a></li>
+                            </ul>
+                        </center>
+                    </div>
+                    <!--End of Developer Social Media Links-->
+                </div>
+                <!--End of Second Row-->
+            </nav>
         </div>
-        </div>
+        <!--End of Footer Section-->
    </form>
 
     <script src="jquery/jquery.js" type="text/javascript"></script>
