@@ -1,6 +1,6 @@
-body{
+﻿body{
     background-color:#ccccff;
-    width:initial;
+    
 }
 
 .footer{
@@ -18,6 +18,9 @@ body{
     max-height: 1500px;
     
 }
+.footer:hover{
+    background-color: #003366;
+}
 
 .footgrid{
     position: relative;
@@ -30,8 +33,14 @@ body{
   border-right:0px;
 }
 
-.socialmedialog >li >a:hover{
-    background-color: transparent;
+.footernav >li >a:hover{
+  background-color:transparent;
+  color:#00ccff;
+}
+
+.footernav >li >a >img:hover{
+  border:3px solid #fffffb;
+  border-radius:15px;
 }
 
 .hotlinetext{
@@ -59,7 +68,7 @@ body{
  {
      background-color:#450909;
  }
- 
+
  /* navbar toggle buttton focus*/
 .navbar-inverse .navbar-toggle
 {
@@ -71,3 +80,9 @@ body{
 {
     background-color:#450909;
 }
+#myCarousel{
+    position:relative;
+    top:50px;
+}
+
+
