@@ -9,17 +9,14 @@
     bottom:0px;
     right:0px;
     left:0px;
-    background-color:#003366;
+    background-color:#2B2B2B;
     margin-bottom:0px;
-    color:#fffffb;
+    color:#ADFF2F;
     font-weight:bold;
     width: 100%;
     min-height: 240px;
     max-height: 1500px;
     
-}
-.footer:hover{
-    background-color: #003366;
 }
 
 .footgrid{
@@ -31,11 +28,12 @@
 
 .footernav >li >a{
   border-right:0px;
+  color:#ADFF2F;
 }
 
 .footernav >li >a:hover{
   background-color:transparent;
-  color:#00ccff;
+  color:#ADFF2F;
 }
 
 .footernav >li >a >img:hover{
