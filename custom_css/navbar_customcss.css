@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .navbar-inverse {
      background-color:#d8d8d8;
      height:50px;
@@ -111,3 +112,121 @@
 }
 
 
+=======
+﻿.navbar-inverse {
+     background-color:#003355;
+     height:50px;
+     max-height:140px;
+     border-color:transparent;
+     max-height:400px;
+}
+.navbar-inverse:hover{
+    background-color: #003366;
+    
+}
+
+.nav .navbar-nav > li > a {
+    font-family:Calibri;
+    font-size:20px; 
+}
+.navbar-header > button {
+    position:relative;
+    top:5px;
+}
+.collapse{
+    
+    background-color:transparent;
+    border-top:none;
+}
+.collape > .navbar-collapse{
+    position:relative;
+    top:50px;
+}
+.homesub{
+    position: relative;
+    top:10px;
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+     background-color: #00ccff;
+}
+
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+     background-color: #00ccff;
+     
+}
+
+.dropdown-menu {
+     background-color: #2f3343;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+     background-color:#00ccff;
+}
+.navbar-inverse {
+     background-image: none;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+     background-image: none;
+}
+
+/*.navbar-inverse {
+     border-color: #820509;
+}*/
+
+.navbar-inverse .navbar-brand {
+     color:#ffcc00;
+     font-family: Accidental Presidency;
+      font-weight:bold;
+      font-size: 30px;
+      position: relative;
+      top:-10px;
+     border:3px black;
+}
+.navbar-inverse .navbar-brand:hover {
+    color: #00ccff;  font-weight:bold;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color:#00ccff;  font-weight:bold;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+     color: #003366;  font-weight:bold;
+}
+
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+    color: #003366;
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+    color: #003366;
+}
+.dropdown-menu>li>a {
+    color: #bbbbbb;
+    font-weight:bold;
+}
+
+    .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+        color: #003366;
+}
+
+.navbar-inverse .navbar-nav>.dropdown>a .caret {
+    border-top-color:  #bbbbbb;
+}
+
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret {
+    border-top-color: #003366;
+}
+
+.navbar-inverse .navbar-nav>.dropdown>a .caret {
+    border-bottom-color:  #003366;
+}
+
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret {
+    border-bottom-color: #003366;
+}
+
+
+>>>>>>> 7a18260806e361c9075b8b4acb0927533c9f9a35
