@@ -3,9 +3,23 @@
     
 }
 
+.title
+{
+    color:#828282;
+    text-align:center;
+    
+ }
+ 
+.paragraph_font
+{
+    color:#828282;
+    font-weight:bolder;
+    text-align:justify;
+    font-size:large;
+}
+
 .footer{
-    position:relative;
-    top:30px;
+    position:static;
     bottom:0px;
     right:0px;
     left:0px;
@@ -14,8 +28,7 @@
     color:#ADFF2F;
     font-weight:bold;
     width: 100%;
-    min-height: 240px;
-    max-height: 1500px;
+   
     
 }
 
@@ -70,7 +83,7 @@
  /* navbar toggle buttton focus*/
 .navbar-inverse .navbar-toggle
 {
-    background-color:#ADFF2F;
+    background-color:#4B806B;
 }
 
 /* navbar toggle buttton active*/
