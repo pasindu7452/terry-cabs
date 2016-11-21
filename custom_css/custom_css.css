@@ -64,19 +64,19 @@
 /* navbar toggle buttton hover*/
 .navbar-inverse .navbar-toggle:hover
  {
-     background-color:#450909;
+     background-color:#ADFF2F;
  }
 
  /* navbar toggle buttton focus*/
 .navbar-inverse .navbar-toggle
 {
-    background-color:#bbbbbb;
+    background-color:#ADFF2F;
 }
 
 /* navbar toggle buttton active*/
 .navbar-inverse .navbar-toggle:focus
 {
-    background-color:#450909;
+    background-color:#ADFF2F;
 }
 #myCarousel{
     position:relative;

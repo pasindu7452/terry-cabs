@@ -19,3 +19,4 @@
 .navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #ADFF2F}
 .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #ADFF2F}
 
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus{color:#ADFF2F; background-color:#828282}
