@@ -1,14 +1,11 @@
 .navbar-inverse {
-     background-color:#003355;
+     background-color:#d8d8d8;
      height:50px;
      max-height:140px;
      border-color:transparent;
      max-height:400px;
 }
-.navbar-inverse:hover{
-    background-color: #003366;
-    
-}
+
 
 .nav .navbar-nav > li > a {
     font-family:Calibri;
@@ -70,11 +67,11 @@
      border:3px black;
 }
 .navbar-inverse .navbar-brand:hover {
-    color: #00ccff;  font-weight:bold;
+    color:#4e6779;  font-weight:bold;
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    color:#00ccff;  font-weight:bold;
+    color:#4e6779;  font-weight:bold;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {

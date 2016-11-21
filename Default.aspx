@@ -31,7 +31,7 @@
                         </div>
 
                          <div class="item">
-                             <img src="images/2.jpg" alt="Chania"  class="img-responsive"  width="100%">
+                             <img src="images/2.jpg" alt="Chania" class="img-responsive"  width="100%">
                              <div class="carousel-caption">
                                 <h3>Chania</h3>
                                  <p>The atmosphere in Chania has a touch of Florence and Venice.</p>

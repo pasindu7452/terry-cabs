@@ -4,7 +4,7 @@
     <title>User Signin</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<div class="row">
+    <div class="row">
     <div class="col-md-4 col-md-offset-4">
         <center><h1>User Signin</h1></center>
         <div class="form-group">
@@ -28,8 +28,12 @@
                 TextMode="Password"></asp:TextBox>
         </div>
 
-        <asp:Button ID="btnSignin" runat="server" Text="Sign In" CssClass="btn btn-primary" />
-          <br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <asp:Button ID="btnSignin" runat="server" Text="Sign In" 
+            CssClass="btn btn-primary" onclick="btnSignin_Click" />
+         
+          <br /><br />
+        <asp:Label ID="lblMessage" runat="server"></asp:Label>
+        <br /><br /><br /><br /><br /><br /><br />
     </div>
   
 </div>
