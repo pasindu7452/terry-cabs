@@ -5,9 +5,14 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="row">
+
+        <div class="col-md-4 col-md-offset-4 title">
+            <h1>User Signin</h1>
+        </div>
+
     <div class="col-md-4 col-md-offset-4">
-        <center><h1>User Signin</h1></center>
-        <div class="form-group">
+        
+        <div class="form-group paragraph_font">
             <asp:Label ID="lblEmail" runat="server" Text="Email:"></asp:Label>
             <asp:RequiredFieldValidator ID="EmailRequiredFieldValidator1" runat="server" 
                 ControlToValidate="txtEmail" Display="Dynamic" ErrorMessage="email required" 
@@ -19,7 +24,7 @@
             <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control"></asp:TextBox>
         </div>
 
-        <div class="form-group">
+        <div class="form-group paragraph_font">
             <asp:Label ID="lblPassword" runat="server" Text="Password:"></asp:Label>
             <asp:RequiredFieldValidator ID="PasswordRequiredFieldValidator1" runat="server" 
                 ControlToValidate="txtPassword" Display="Dynamic" 
@@ -33,7 +38,7 @@
          
           <br /><br />
         <asp:Label ID="lblMessage" runat="server"></asp:Label>
-        <br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br />
     </div>
   
 </div>
