@@ -19,9 +19,15 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
 <div class=" col-md-4 col-md-offset-4">
-       <center><h1>User Signup</h1></center>
+     
        
-        <div class="form-group">
+        <div class="panel panel-warning">
+            <div class=" panel-heading title">
+                <h1>User Signup</h1>
+            </div>
+
+            <div class=" panel-body paragraph_font">
+                <div class="form-group">
             <asp:Label ID="lblFname" runat="server" Text=" First Name:"></asp:Label>
             <asp:RequiredFieldValidator ID="FnameRequiredFieldValidator1" runat="server" 
                 ControlToValidate="txtName" Display="Dynamic" 
@@ -112,6 +118,8 @@
 
         <asp:Button ID="Signup" runat="server" Text="Sign Up" 
            CssClass=" btn btn-primary" onclick="Signup_Click" /> 
+            </div>
+        </div>
 
        
 
