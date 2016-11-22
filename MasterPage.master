@@ -11,6 +11,14 @@
         <link href="custom_css/custom_css.css" rel="stylesheet" type="text/css" />
         <link href="custom_css/navbar_customcss.css" rel="stylesheet" type="text/css" />
         <!--End of Styling-->
+        <!--fonts-->
+        <style type="text/css">
+            @font-face {
+                font-family:"Calibri";
+                src: url(bootstrap\fonts\Calibri.ttf) format("truetype");
+            }
+        </style>
+        <!--End of fonts-->
 
         <!--Scripts-->
         <script src="jquery/jquery.js" type="text/javascript"></script>
