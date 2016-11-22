@@ -6,12 +6,12 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="row">
 
-        <div class="col-md-4 col-md-offset-4 title">
-            <h1>User Signin</h1>
-        </div>
-
+       
     <div class="col-md-4 col-md-offset-4">
         
+      <div class=" panel panel-warning">
+      <div class="panel-heading title"><h1>User Signin</h1></div>
+      <div class="panel-body">
         <div class="form-group paragraph_font">
             <asp:Label ID="lblEmail" runat="server" Text="Email:"></asp:Label>
             <asp:RequiredFieldValidator ID="EmailRequiredFieldValidator1" runat="server" 
@@ -35,6 +35,8 @@
 
         <asp:Button ID="btnSignin" runat="server" Text="Sign In" 
             CssClass="btn btn-primary" onclick="btnSignin_Click" />
+      </div>
+      </div>
          
           <br /><br />
         <asp:Label ID="lblMessage" runat="server"></asp:Label>
