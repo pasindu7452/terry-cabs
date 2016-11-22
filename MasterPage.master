@@ -3,7 +3,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+
+    <head runat="server">
 
         <!--Styling-->
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
@@ -11,73 +12,80 @@
         <link href="custom_css/navbar_customcss.css" rel="stylesheet" type="text/css" />
         <!--End of Styling-->
 
-       <%-- <!--Scripts-->
+        <!--Scripts-->
         <script src="jquery/jquery.js" type="text/javascript"></script>
         <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-        <!--End of Scripts-->--%>
+        <!--End of Scripts-->
 
         <asp:ContentPlaceHolder ID="head" runat="server">
-        <title></title>
+        
         </asp:ContentPlaceHolder>
 
-        
+        <title>Terry Cabs</title>
 
     </head>
 
-<body>
-    <form id="form1" runat="server">
-        <!--Navigation Bar-->
-        <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Terry cabs</a>
-    </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li ><a href="#">Home</a></li>
-        <li><a href="#">Vehicles</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Contact us</a></li>
-      </ul>
-      
-      <ul class="nav navbar-nav navbar-right">
+    <body>
+
+        <!--Navigation Bar-->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+
+                <!--Navigation Bar Items Grouping Section For Mobile Devices-->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed main" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="Default.aspx"><center>TERRY CABS<br/><sub class="homesub">Home</sub></center></a>
+                </div>
+                <!--End of Navigation Bar Items Grouping Section For Mobile Devices-->
+
+                <!--Navigaton Bar Items-->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Packages <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">Vehicles</a></li>
+                        <li><a href="Aboutus.aspx">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Reservations</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Sign up</a></li>
-             <li><a href="#">Sign in</a></li>
+            <li><a href="user_signup.aspx">Sign up</a></li>
+             <li><a href="user_signin.aspx">Sign in</a></li>
              <li><a href="#">profile</a></li>
           </ul>
         </li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
+                </div><!-- /.navbar-collapse -->
+                <!--Navigaton Bar Items-->
+            </div><!-- /.container-fluid -->
+        </nav>
         <!--Navigation Bar-->
 
-        
-         <br /><br />
-         <!-- content -->
-        <div class=" container">
-            <div class="row main">
-                 <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
-                </asp:ContentPlaceHolder>
-             </div> 
-        </div>
 
-         <!--Footer Section-->
+        <!-- content -->
+
+        <asp:ContentPlaceHolder ID="CarouselPlaceHolder" runat="server" >
+
+        </asp:ContentPlaceHolder>
+        <br /> <br /> <br />
+        <asp:ContentPlaceHolder ID="PageBody1" runat="server" >
+
+        </asp:ContentPlaceHolder>
+
+        <!--End of Content-->
+        
+
+
+        <!--Footer Section-->
         <div class="container-fluid footer">
             <nav class="navbar-footer">
                  
@@ -109,10 +117,10 @@
                     <br/>
                         <center>
                             <ul class="nav navbar-nav navbar-left footernav">
-                                <li><a href="#">Home</a></li>
+                                <li><a href="Default.aspx">Home</a></li>
                                 <li><a href="#">Packages</a></li>
                                 <li><a href="#">Vehicles</a></li>
-                                <li><a href="#">About Us</a></li>
+                                <li><a href="Aboutus.aspx">About Us</a></li>
                                 <li><a href="#">Contact Us</a></li>
                             </ul>
                         </center>
@@ -168,9 +176,9 @@
             </nav>
         </div>
         <!--End of Footer Section-->
-   </form>
+           
+            
+    </body>
 
-    <script src="jquery/jquery.js" type="text/javascript"></script>
-    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-</body>
+
 </html>
