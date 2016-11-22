@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Zepher api denna galak kapamu <3 
+=======
+test1
+>>>>>>> 59dce32fe1ff25cff8d0802aaee8e723bdd4bc7c
