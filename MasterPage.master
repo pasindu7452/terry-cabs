@@ -17,7 +17,12 @@
                 font-family:"Calibri";
                 src: url(bootstrap\fonts\Calibri.ttf) format("truetype");
             }
+            @font-face {
+                font-family:"Accidental Presidency";
+                src: url(bootstrap\fonts\ACCID__.TTF) format("truetype");
+            }
         </style>
+        <link
         <!--End of fonts-->
 
         <!--Scripts-->
@@ -121,7 +126,7 @@
                     <!--End of Terry Cabs Social Media Links-->
 
                     <!--Footer Navigation Section-->
-                    <div class="col-md-4 footgrid">
+                    <div class="col-md-5 footgrid">
                     <br/>
                         <center>
                             <ul class="nav navbar-nav navbar-left footernav">
@@ -136,7 +141,7 @@
                     <!--End of Footer Navigation Section-->
 
                     <!--Terry Cabs Hotline Section-->
-                    <div class="col-md-4 footgrid">
+                    <div class="col-md-3 footgrid">
                     <br/>
                         <center>
                             <p class="hotlinetext">
@@ -172,9 +177,9 @@
                     <br/>
                         <center>
                             <ul class="nav navbar-nav navbar-left footernav">
-                                <li><a href="#"><img alt="Facebook" src="images/logo/facebook.png" height="40px" width="40px"/></a></li>
-                                <li><a href="#"><img alt="Twitter" src="images/logo/twitter.png" height="40px" width="40px"/></a></li>
-                                <li><a href="#"><img alt="GooglePlus" src="images/logo/googleplus.png" height="40px" width="40px"/></a></li>
+                                <li><a href="#"><img alt="Facebook" src="images/logo/facebook.png" height="30px" width="30px"/></a></li>
+                                <li><a href="#"><img alt="Twitter" src="images/logo/twitter.png" height="30px" width="30px"/></a></li>
+                                <li><a href="#"><img alt="GooglePlus" src="images/logo/googleplus.png" height="30px" width="30px"/></a></li>
                             </ul>
                         </center>
                     </div>
