@@ -1,5 +1,8 @@
-﻿body{
+﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
     background-color:#ccccff;
+    font:calibri;
     
 }
 
@@ -18,12 +21,12 @@
 .vehsetsethead{
     color:#003366;
     position:relative;
-    left:20px;
+    left:5px;
 }
 
 .vehsetset{
     position:relative;
-    left:30px;
+    left:10px;
 }
 
 .vehgridrow{

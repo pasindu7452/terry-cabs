@@ -107,7 +107,7 @@
            <h3>VEHICLES</h3> 
             <div class="row vehgridrow">
                 <div class="col-sm-6 vehgrid">
-                    <br /><img alt="car" src="images/veh1.jpg" height="120px" width="auto"/>
+                    <br /><img alt="car" src="images/veh1.jpg" height="100px" width="auto"/>
                 </div>
                 <div class="col-sm-6 vehgrid">
                     <h4 class="vehsetsethead">Cars</h4>
@@ -116,9 +116,10 @@
                     <h5 class="vehsetset">Without Driver</h5>
                 </div>
             </div>
+            <hr />
             <div class="row vehgridrow">
                 <div class="col-sm-6 vehgrid">
-                    <br /><img alt="van" src="images/veh2.jpg" height="120px" width="auto"/>
+                    <br /><img alt="van" src="images/veh2.jpg" height="100px" width="auto"/>
                 </div>
                 <div class="col-sm-6 vehgrid">
                     <h4 class="vehsetsethead">Vans</h4>
@@ -128,9 +129,10 @@
                     <h5 class="vehsetset">Long Or Short Distance</h5>
                 </div>
             </div>
+            <hr />
             <div class="row vehgridrow">
                 <div class="col-sm-6 vehgrid">
-                    <br /><img alt="bus" src="images/veh3.jpg" height="120px" width="auto"/>
+                    <br /><img alt="bus" src="images/veh3.jpg" height="100px" width="auto"/>
                 </div>
                 <div class="col-sm-6 vehgrid">
                     <h4 class="vehsetsethead">Buses</h4>
@@ -140,6 +142,7 @@
                     <h5 class="vehsetset">Long Or Short Distance</h5>
                 </div>
             </div>
+            <hr />
             
         </div>
         <div class="col-md-1 defright">
