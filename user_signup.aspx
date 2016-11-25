@@ -13,7 +13,9 @@
              {
                 args.IsValid = false;
              }
-        } 
+        }
+
+       
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -26,7 +28,7 @@
                 <h1>User Signup</h1>
             </div>
 
-            <div class=" panel-body paragraph_font">
+            <div class=" panel-body form_label">
                 <div class="form-group">
             <asp:Label ID="lblFname" runat="server" Text=" First Name:"></asp:Label>
             <asp:RequiredFieldValidator ID="FnameRequiredFieldValidator1" runat="server" 
@@ -118,10 +120,12 @@
 
         <asp:Button ID="Signup" runat="server" Text="Sign Up" 
            CssClass=" btn btn-primary" onclick="Signup_Click" /> 
+
+              
             </div>
         </div>
 
-       
+         
 
         <br />    <br />
     </div>
