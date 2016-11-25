@@ -3,19 +3,29 @@
     
 }
 
+/* every title is having this class */
 .title
 {
     color:#828282;
     text-align:center;
     
  }
- 
+
+/* css class for every paragraph*/ 
 .paragraph_font
 {
     color:#828282;
     font-weight:bolder;
     text-align:justify;
     font-size:large;
+}
+
+/* css class for label in the forms*/
+.form_label
+{
+    color:#828282;
+    font-weight:bold;
+    font-size:12px;
 }
 
 .footer{
