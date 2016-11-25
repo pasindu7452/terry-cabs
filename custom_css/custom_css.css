@@ -1,8 +1,6 @@
-﻿body{
-    background-color:#d7cec7;
-    
-}
+﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+<<<<<<< HEAD
 /* every title is having this class */
 .title
 {
@@ -18,6 +16,11 @@
     font-weight:bolder;
     text-align:justify;
     font-size:large;
+=======
+body{
+    background-color:#ccccff;
+    
+>>>>>>> fc5423aaea79b85e4b02cb61810aa0c4c816b3c7
 }
 
 /* css class for label in the forms*/
@@ -29,17 +32,22 @@
 }
 
 .footer{
-    position:static;
+    position:relative;
+    top:30px;
     bottom:0px;
     right:0px;
     left:0px;
-    background-color:#2B2B2B;
+    background-color:#003366;
     margin-bottom:0px;
-    color:#ADFF2F;
+    color:#fffffb;
     font-weight:bold;
     width: 100%;
-   
+    min-height: 240px;
+    max-height: 1500px;
     
+}
+.footer:hover{
+    background-color: #003366;
 }
 
 .footgrid{
@@ -51,12 +59,11 @@
 
 .footernav >li >a{
   border-right:0px;
-  color:#ADFF2F;
 }
 
 .footernav >li >a:hover{
   background-color:transparent;
-  color:#ADFF2F;
+  color:#00ccff;
 }
 
 .footernav >li >a >img:hover{
@@ -66,7 +73,7 @@
 
 .hotlinetext{
     font-family: Calibri;
-    font-size: 35px;
+    font-size: 28px;
     color:#ffffff;
     
 }
@@ -87,19 +94,19 @@
 /* navbar toggle buttton hover*/
 .navbar-inverse .navbar-toggle:hover
  {
-     background-color:#ADFF2F;
+     background-color:#450909;
  }
 
  /* navbar toggle buttton focus*/
 .navbar-inverse .navbar-toggle
 {
-    background-color:#4B806B;
+    background-color:#bbbbbb;
 }
 
 /* navbar toggle buttton active*/
 .navbar-inverse .navbar-toggle:focus
 {
-    background-color:#ADFF2F;
+    background-color:#450909;
 }
 #myCarousel{
     position:relative;
