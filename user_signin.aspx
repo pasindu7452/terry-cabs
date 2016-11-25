@@ -11,8 +11,8 @@
         
       <div class=" panel panel-warning">
       <div class="panel-heading title"><h1>User Signin</h1></div>
-      <div class="panel-body">
-        <div class="form-group paragraph_font">
+      <div class="panel-body form_label">
+        <div class="form-group ">
             <asp:Label ID="lblEmail" runat="server" Text="Email:"></asp:Label>
             <asp:RequiredFieldValidator ID="EmailRequiredFieldValidator1" runat="server" 
                 ControlToValidate="txtEmail" Display="Dynamic" ErrorMessage="email required" 
@@ -24,7 +24,7 @@
             <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control"></asp:TextBox>
         </div>
 
-        <div class="form-group paragraph_font">
+        <div class="form-group">
             <asp:Label ID="lblPassword" runat="server" Text="Password:"></asp:Label>
             <asp:RequiredFieldValidator ID="PasswordRequiredFieldValidator1" runat="server" 
                 ControlToValidate="txtPassword" Display="Dynamic" 
