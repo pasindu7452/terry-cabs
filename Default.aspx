@@ -8,7 +8,7 @@
     <link href="custom_css/defaultpage_css.css" rel="stylesheet" type="text/css" />
     <!--End of Styling-->
 </asp:Content>
-<<<<<<< HEAD
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
 
@@ -29,8 +29,7 @@
              world-class taxi services at the most economical price in Sri Lanka. We always try to be the hallmark for 
             reliable, high quality service in your city that it operates in."
         </p>
-=======
-
+</asp:Content>
 
 
 <asp:Content ID="Carousel1" ContentPlaceHolderID="CarouselPlaceHolder" runat="server">
@@ -90,13 +89,13 @@
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
->>>>>>> fc5423aaea79b85e4b02cb61810aa0c4c816b3c7
+
     </div>
     <!--End of Carousel Slider-->
 
 </asp:Content>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="PageBody1" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="PageBody1" runat="server">
     <hr />
     <br />
     <div class="row defcontent">
