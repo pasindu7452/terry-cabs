@@ -49,12 +49,16 @@ public partial class Default2 : System.Web.UI.Page
         {
             SqlCommand cmd = new SqlCommand("spAddUser",con);
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+            //PasswordCompareValidator1 encryption
+            String enpass = FormsAuthentication.HashPasswordForStoringInConfigFile(txtPassword.Text,"SHA1");
+
             cmd.Parameters.AddWithValue("@fname",txtName.Text);
             cmd.Parameters.AddWithValue("@lname", txtLname.Text);
             cmd.Parameters.AddWithValue("@contact",txtContact.Text);
             cmd.Parameters.AddWithValue("@address",txtAddress.Text);
             cmd.Parameters.AddWithValue("email", txtEmail.Text);
-            cmd.Parameters.AddWithValue("@password", txtPassword.Text);
+            cmd.Parameters.AddWithValue("@password", enpass);
 
             SqlParameter outputpara=new SqlParameter();
             outputpara.ParameterName="@status";
