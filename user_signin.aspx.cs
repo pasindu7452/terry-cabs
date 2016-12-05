@@ -35,8 +35,11 @@ public partial class Default2 : System.Web.UI.Page
             SqlCommand cmd = new SqlCommand("spAuthenticateUsers",con);
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
+            //password encryption
+            string enpass = FormsAuthentication.HashPasswordForStoringInConfigFile(password,"SHA1");
+
             cmd.Parameters.AddWithValue("@email",useremail);
-            cmd.Parameters.AddWithValue("@password",password);
+            cmd.Parameters.AddWithValue("@password",enpass);
 
             SqlParameter outputpara = new SqlParameter();
             outputpara.ParameterName = "@status";
