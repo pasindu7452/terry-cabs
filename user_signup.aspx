@@ -19,11 +19,11 @@
     </script>
 </asp:Content>
 
-<<<<<<< HEAD
+<asp:Content ID="Content2" ContentPlaceHolderID="PageBody1" Runat="Server">
 <div class=" col-md-4 col-md-offset-4">
      
-       
-        <div class="panel panel-warning">
+       <form runat="server">
+        <div class="panel panel-primary">
             <div class=" panel-heading title">
                 <h1>User Signup</h1>
             </div>
@@ -36,21 +36,7 @@
                 ErrorMessage="first name required" ForeColor="Red" SetFocusOnError="True">first name required</asp:RequiredFieldValidator>
             <asp:TextBox ID="txtName" runat="server" CssClass="form-control"></asp:TextBox>
         </div>
-=======
-<asp:Content ID="Content2" ContentPlaceHolderID="PageBody1" Runat="Server">
 
-    <div class="container">
-        <form runat="server">
-           <center><h1>User Signup</h1></center>
-       
-            <div class="form-group">
-                <asp:Label ID="lblFname" runat="server" Text=" First Name:"></asp:Label>
-                <asp:RequiredFieldValidator ID="FnameRequiredFieldValidator1" runat="server" 
-                    ControlToValidate="txtName" Display="Dynamic" 
-                    ErrorMessage="first name required" ForeColor="Red" SetFocusOnError="True">first name required</asp:RequiredFieldValidator>
-                <asp:TextBox ID="txtName" runat="server" CssClass="form-control"></asp:TextBox>
-            </div>
->>>>>>> fc5423aaea79b85e4b02cb61810aa0c4c816b3c7
 
             <div class="form-group">
                 <asp:Label ID="lblLname" runat="server" Text="Last Name:"></asp:Label>
@@ -136,7 +122,7 @@
             <asp:Button ID="Signup" runat="server" Text="Sign Up" 
                CssClass=" btn btn-primary" onclick="Signup_Click" /> 
 
-<<<<<<< HEAD
+
               
             </div>
         </div>
@@ -144,13 +130,16 @@
          
 
         <br />    <br />
-=======
-       
-        </form>
-        <br /><br />
->>>>>>> fc5423aaea79b85e4b02cb61810aa0c4c816b3c7
-    </div>
-   
 
+       
+     
+      
+        <br /><br />
+
+    </div>
+
+    </form>
 </asp:Content>
+
+
 

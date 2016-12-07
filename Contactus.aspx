@@ -2,6 +2,8 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <title>Contact Us</title>
+    
+     <link href="custom_css/Contactus.css?v=2" rel="stylesheet" type="text/css" />
     <link href="custom_css/Contactus.css?=v1" rel="stylesheet" type="text/css" />
 </asp:Content>
 
@@ -27,7 +29,7 @@
 
                     
                 <div class="form-group">
-            <asp:Label ID="lblEmail" runat="server" Text="Email :"></asp:Label>
+            <asp:Label ID="em" runat="server" Text="Email :"></asp:Label>
             <asp:RequiredFieldValidator ID="EmailRequiredFieldValidator1" runat="server" 
                 ControlToValidate="txtEmail" Display="Dynamic" ErrorMessage="*email required" 
                 ForeColor="Red" SetFocusOnError="True">email required</asp:RequiredFieldValidator>
@@ -76,14 +78,13 @@
        
         <!--google map location of terry cabs-->
                
-<!DOCTYPE html>
-<html>
-  <head>
+
+
+  
     
-     <link href="custom_css/Contactus.css?v=2" rel="stylesheet" type="text/css" />
-  </head>
+
    
-  <body>
+ 
 
       <div class="container-fluid">
       <div id="map"></div>
@@ -114,8 +115,7 @@
 
 
       </div>
-  </body>
-</html>
+ 
  </div>    
 </div>     
 
