@@ -8,7 +8,11 @@
     text-align:center;
     
  }
-
+.title_two
+{
+    color:cornflowerblue;
+    text-align:center;
+}
 /* css class for every paragraph*/ 
 .paragraph_font
 {
@@ -17,11 +21,10 @@
     text-align:justify;
     font-size:large;
 =======
-body{
+/*.body{
     background-color:#ccccff;
     
->>>>>>> fc5423aaea79b85e4b02cb61810aa0c4c816b3c7
-}
+}*/
 
 /* css class for label in the forms*/
 .form_label
