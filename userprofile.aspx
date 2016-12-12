@@ -9,21 +9,30 @@
     <form id="form1" runat="server">
 
     <div class="col-md-12 text-right">
-        <asp:Label ID="lblLoggedin" runat="server" Text="You are logged in as:"></asp:Label>
+        <asp:Label ID="lblLoggedin" runat="server"></asp:Label>
+                  
     </div>
 
    
     
     <div class="row">
-        <ul class="nav nav-tabs">
-            <li class="active"><a href="#Main" data-toggle="tab">Main</a></li>
+        <ul class="nav nav-tabs"  runat="server">
+            <li class="active"><a href="#Main" data-toggle="tab"  runat="server">Main</a></li>
             <li><a href="#Update" data-toggle="tab">Update</a></li> 
             <li><a href="#Add" data-toggle="tab">Add profile picture</a></li> 
         </ul>
-        <div class="tab-content">
-            <div class="tab-pane" id="#Main"> </div>
-            <div class="tab-pane" id="#Update"> </div>
-            <div class="tab-pane" id="#Add"> </div>
+        <div class="tab-content"  runat="server">
+            <div class="tab-pane" id="Main" >
+
+                <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+      
+            </div>
+            
+
+
+
+            <div class="tab-pane" id="Update"></div>
+            <div class="tab-pane" id="Add"> </div>
         </div>
     </div>
 
