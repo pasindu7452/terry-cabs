@@ -67,6 +67,16 @@ BEGIN
 	END
 END	
 
+
+--stored prcodure for get user info ti user profile page
+CREATE PROCEDURE spGetuser
+@email nvarchar(250)
+AS
+BEGIN
+ SELECT first_name,last_name,contact_number,address,email FROM tblUser WHERE [email]=@email
+END
+
+
 select * from tblUser
 
 
