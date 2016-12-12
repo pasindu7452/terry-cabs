@@ -9,22 +9,37 @@
     <form id="form1" runat="server">
 
     <div class="col-md-12 text-right">
-        <asp:Label ID="lblLoggedin" runat="server"></asp:Label>
+        <asp:Label ID="lblLoggedin" runat="server"></asp:Label>       
                   
     </div>
 
    
     
     <div class="row">
-        <ul class="nav nav-tabs"  runat="server">
+        <div class="col-md-8 col-md-offset-2">
+             <ul class="nav nav-tabs"  runat="server">
             <li class="active"><a href="#Main" data-toggle="tab"  runat="server">Main</a></li>
             <li><a href="#Update" data-toggle="tab">Update</a></li> 
             <li><a href="#Add" data-toggle="tab">Add profile picture</a></li> 
         </ul>
-        <div class="tab-content"  runat="server">
+        <div class="tab-content">
             <div class="tab-pane" id="Main" >
 
-                <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+                <br />
+
+                    <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None">
+            <AlternatingRowStyle BackColor="White" />
+            <EditRowStyle BackColor="#2461BF" />
+            <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+            <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+            <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+            <RowStyle BackColor="#EFF3FB" />
+            <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+            <SortedAscendingCellStyle BackColor="#F5F7FB" />
+            <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+            <SortedDescendingCellStyle BackColor="#E9EBEF" />
+            <SortedDescendingHeaderStyle BackColor="#4870BE" />
+        </asp:GridView>
       
             </div>
             
@@ -35,6 +50,8 @@
             <div class="tab-pane" id="Add"> </div>
         </div>
     </div>
+        </div>
+    
 
     </form>
 </asp:Content>
