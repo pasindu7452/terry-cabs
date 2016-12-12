@@ -9,7 +9,7 @@
     <form id="form1" runat="server">
 
     <div class="col-md-12 text-right">
-        <asp:Label ID="Label1" runat="server" Text="You are logged in as:"></asp:Label>
+        <asp:Label ID="lblLoggedin" runat="server" Text="You are logged in as:"></asp:Label>
     </div>
 
    
