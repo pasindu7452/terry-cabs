@@ -19,6 +19,8 @@ public partial class Default2 : System.Web.UI.Page
     {
         if (AuthenticateUser(txtEmail.Text, txtPassword.Text))
         {
+           
+            Session["username"] = txtEmail.Text;
             FormsAuthentication.RedirectFromLoginPage(txtEmail.Text, false);
         }
         else
