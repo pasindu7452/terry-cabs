@@ -10,23 +10,24 @@ using System.Configuration;
 
 public partial class Default2 : System.Web.UI.Page
 {
+    
     protected void Page_Load(object sender, EventArgs e)
     {
-        lblLoggedin.Text ="you are logged in as :" + Convert.ToString(Session["username"]);
+        lblLoggedin.Text = "you are logged in as :" + Convert.ToString(Session["username"]);
         string user = Convert.ToString(Session["username"]);
         string cs = ConfigurationManager.ConnectionStrings["dbex"].ConnectionString;
-        
-        using(SqlConnection con = new SqlConnection(cs))
+
+        using (SqlConnection con = new SqlConnection(cs))
         {
             con.Open();
             //SqlCommand cmd=new SqlCommand("SELECT * FROM tblUser WHERE email = "+user,con);
-            SqlDataAdapter da = new SqlDataAdapter("spGetuser",con);
+            SqlDataAdapter da = new SqlDataAdapter("spGetuser", con);
             da.SelectCommand.CommandType = System.Data.CommandType.StoredProcedure;
 
-            da.SelectCommand.Parameters.AddWithValue("@email",user);
-            
-            
-            DataSet ds =new DataSet();
+            da.SelectCommand.Parameters.AddWithValue("@email", user);
+
+
+            DataSet ds = new DataSet();
             da.Fill(ds);
             GridView1.DataSource = ds;
             GridView1.DataBind();
@@ -37,6 +38,10 @@ public partial class Default2 : System.Web.UI.Page
 
 
 
+
+    }
+    protected void form1_Load(object sender, EventArgs e)
+    {
 
     }
 }
