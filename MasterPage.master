@@ -75,7 +75,6 @@
           <ul class="dropdown-menu">
             <li><a href="user_signup.aspx">Sign up</a></li>
              <li><a href="user_signin.aspx">Sign in</a></li>
-             <li><a href="#">profile</a></li>
           </ul>
         </li>
       </ul>
