@@ -9,25 +9,26 @@
     <form id="form1" runat="server">
 
     <div class="col-md-12 text-right">
-        <asp:Label ID="lblLoggedin" runat="server"></asp:Label>       
-                  
+        <asp:Label ID="lblLoggedin" runat="server"></asp:Label>   <br />  <br />  
+        <asp:Button ID="btnLogout" runat="server" Text="Logout" CssClass="btn btn-primary" />
     </div>
 
-   
+         <br />        <br />                   
     
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
+
+            
+
              <ul class="nav nav-tabs"  >
-            <li class="active"><a href="#Main" data-toggle="tab" runat="server"  onload="Page_Load" id="lp" >Main</a></li>
+                  <li class="active"><a href="#Main" data-toggle="tab">User Info</a></li> 
             <li><a href="#Update" data-toggle="tab">Update password</a></li> 
             <li><a href="#Add" data-toggle="tab">Order History</a></li> 
         </ul>
         <div class="tab-content">
-            <div class="tab-pane" id="Main"  >
-
-                <br />
-
-                    <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None">
+            <br /><br />
+            <div class="tab-pane active" id="Main"> 
+                <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="678px">
             <AlternatingRowStyle BackColor="White" />
             <EditRowStyle BackColor="#2461BF" />
             <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -40,13 +41,9 @@
             <SortedDescendingCellStyle BackColor="#E9EBEF" />
             <SortedDescendingHeaderStyle BackColor="#4870BE" />
         </asp:GridView>
-      
             </div>
-            
 
-
-
-            <div class="tab-pane" id="Update">
+            <div class="tab-pane " id="Update">
                 <div class="col-md-6">
                     <br />
                     <div class="panel panel-primary">
@@ -61,6 +58,9 @@
                                 <asp:Label ID="lblNewpw" runat="server" Text="Enter new password:"></asp:Label>
                                 <asp:TextBox ID="txtNewpw" runat="server" CssClass="form-control"></asp:TextBox>
                             </div>
+
+                            <asp:Button ID="btnUpdatepw" runat="server" Text="Update" CssClass="btn btn-primary" OnClick="btnUpdatepw_Click" />
+                            <asp:Label ID="lblResult" runat="server"></asp:Label>
                         </div>
                     </div>
                 </div>

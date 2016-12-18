@@ -34,14 +34,14 @@ public partial class Default2 : System.Web.UI.Page
 
         }
 
-        
-
-
-
-
     }
-    protected void form1_Load(object sender, EventArgs e)
-    {
 
+
+    protected void btnUpdatepw_Click(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            lblResult.Text = "done";
+        }
     }
 }
