@@ -51,11 +51,15 @@
                         <div class="panel-body">
                             <div class="form-group">
                                 <asp:Label ID="lblOldpw" runat="server" Text="Enter old password:"></asp:Label>
+
+                                <asp:RequiredFieldValidator ID="OldpwRequriementValidator" runat="server" ErrorMessage="*Enter old password" ControlToValidate="txtOldpw" Display="Dynamic" SetFocusOnError="True" Text="*Enter old password" ForeColor="Red"></asp:RequiredFieldValidator>
                                 <asp:TextBox ID="txtOldpw" runat="server" CssClass="form-control"></asp:TextBox>
                             </div>
 
                             <div class="form-group">
                                 <asp:Label ID="lblNewpw" runat="server" Text="Enter new password:"></asp:Label>
+
+                                <asp:RequiredFieldValidator ID="NewpwRequiredValidator" runat="server" ErrorMessage="*Enter new password" ControlToValidate="txtNewpw" Display="Dynamic" SetFocusOnError="True" Text="*Enter new password" ForeColor="Red"></asp:RequiredFieldValidator>
                                 <asp:TextBox ID="txtNewpw" runat="server" CssClass="form-control"></asp:TextBox>
                             </div>
 
