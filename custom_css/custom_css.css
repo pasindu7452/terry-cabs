@@ -1,6 +1,6 @@
 ﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-<<<<<<< HEAD
+
 /* every title is having this class */
 .title
 {
@@ -13,14 +13,13 @@
     color:cornflowerblue;
     text-align:center;
 }
-/* css class for every paragraph*/ 
-.paragraph_font
-{
-    color:#828282;
-    font-weight:bolder;
-    text-align:justify;
-    font-size:large;
-=======
+/* css class for every paragraph*/
+.paragraph_font {
+    color: #828282;
+    font-weight: bolder;
+    text-align: justify;
+    font-size: large;
+}
 /*.body{
     background-color:#ccccff;
     

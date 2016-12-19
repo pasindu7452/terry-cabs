@@ -15,7 +15,7 @@
 
                 <div class="col-md-6 defmid">
                     <div class="text">
-                        <h2>About Us</h2>
+                        <h2><b>ABOUT US</b></h2>
                         <hr/>
                         <p>
                             "Welcome to the official site of Terry cabs. Terry Cabs is a cab service in Sri Lanka which aims to provide world-class luxurious taxi services at the most economical 
@@ -25,17 +25,22 @@
                         <img alt="AboutUsCover" src="images/aboutuscover.png" / width="100%" height="auto"/>
 
                         <br /><br />
-
-                        <h3>Vehicles</h3>
+                        <br />
+                        <h3>Vehicles</h3>  
                         <hr />
                         <p>
-                            
+                            With our fleet of luxurious vehicles from respected European and Japanese manufacturers, we can be help you accomplish 
+                            any kind of vehicle need for any kinda of occasion.
                         </p>
+                        <img alt="VehicleCover" src="images/vehcov.png" / width="100%" height="auto"/>
+                        <br /><br />
                         <h3>Services</h3>
                         <hr />
                         <P>
-
+                            We are capble of providing taxi services all around the Western Province and rent you the luxurious vehicle you want with affordable 
+                            package which we can guarantee will suit your need. For weddding hire we have separete fleet of luxuary sedans and limousines.  
                         </P>
+                        <img alt="ServiceCover" src="images/servcov.png" / width="100%" height="auto"/>
 
 	                </div>
                 </div>
@@ -148,6 +153,8 @@
                         </div>
                         <!--End of panel 3-->
                     </div>
+                    <br />
+                    <img alt="terryAbtimg" src="images/terryAbt.png" / width="100%" height="auto"/>
                 </div>
                 <div class="col-md-1">
                 </div>
