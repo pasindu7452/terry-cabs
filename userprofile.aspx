@@ -17,13 +17,13 @@
     
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-             <ul class="nav nav-tabs"  runat="server">
-            <li class="active"><a href="#Main" data-toggle="tab"  runat="server">Main</a></li>
-            <li><a href="#Update" data-toggle="tab">Update</a></li> 
-            <li><a href="#Add" data-toggle="tab">Add profile picture</a></li> 
+             <ul class="nav nav-tabs"  >
+            <li class="active"><a href="#Main" data-toggle="tab" runat="server"  onload="Page_Load" id="lp" >Main</a></li>
+            <li><a href="#Update" data-toggle="tab">Update password</a></li> 
+            <li><a href="#Add" data-toggle="tab">Order History</a></li> 
         </ul>
         <div class="tab-content">
-            <div class="tab-pane" id="Main" >
+            <div class="tab-pane" id="Main"  >
 
                 <br />
 
@@ -46,7 +46,27 @@
 
 
 
-            <div class="tab-pane" id="Update"></div>
+            <div class="tab-pane" id="Update">
+                <div class="col-md-6">
+                    <br />
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">Update password</div>
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <asp:Label ID="lblOldpw" runat="server" Text="Enter old password:"></asp:Label>
+                                <asp:TextBox ID="txtOldpw" runat="server" CssClass="form-control"></asp:TextBox>
+                            </div>
+
+                            <div class="form-group">
+                                <asp:Label ID="lblNewpw" runat="server" Text="Enter new password:"></asp:Label>
+                                <asp:TextBox ID="txtNewpw" runat="server" CssClass="form-control"></asp:TextBox>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="tab-pane" id="Add"> </div>
         </div>
     </div>
