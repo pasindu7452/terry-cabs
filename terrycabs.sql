@@ -80,6 +80,24 @@ END
 select * from tblUser
 
 
+--stored procedure to update user email
+
+CREATE PROCEDURE spUpdateemail
+@old_email nvarchar(250),
+@new_email nvarchar(250)
+AS
+BEGIN
+	DECLARE @count int
+	SELECT @count=COUNT(email) FROM tblUser WHERE email=@old_email
+	IF @count=1
+	BEGIN
+		UPDATE tblUser SET email=@new_email WHERE email=@old_email
+	END
+END
+
+
+
+
 
 
 
