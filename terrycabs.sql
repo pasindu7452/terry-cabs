@@ -95,6 +95,21 @@ BEGIN
 	END
 END
 
+--stored procedure to update user password
+CREATE PROCEDURE spUpdatepassword
+@email nvarchar(250),
+@oldpass nvarchar(100),
+@newpass nvarchar(100)
+AS
+BEGIN
+ DECLARE @count  int
+ SELECT @count=COUNT(email) FROM tblUser WHERE email=@email AND password=@oldpass
+ IF @count=1
+ BEGIN
+	UPDATE tblUser SET password=@newpass WHERE email=@email AND password=@oldpass
+ END
+END
+
 
 
 
