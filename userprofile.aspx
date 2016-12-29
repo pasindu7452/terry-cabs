@@ -46,7 +46,7 @@
        <div class="col-md-8 col-md-offset-2">
            <div><a href="myaccount.aspx"><div class="col-md-3 box"> My Account<br /><span class="glyphicon glyphicon-user"></span></div></a></div>
            <div><a href="updateemail.aspx"><div class="col-md-3 box">Update Email<br /><span class="glyphicon glyphicon-envelope"></span></div></a></div>
-           <div class="col-md-3 box">Update Password<br /><span class="glyphicon glyphicon-pencil"></span></div>
+           <div><a href="updatepassword.aspx"><div class="col-md-3 box">Update Password<br /><span class="glyphicon glyphicon-pencil"></span></div></a></div>
             <div class="col-md-3 box">Order Details<br /><span class=" glyphicon glyphicon-menu-hamburger"></span></div>  
        </div>
 
