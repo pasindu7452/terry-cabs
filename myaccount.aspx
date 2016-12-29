@@ -21,18 +21,67 @@
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
+                <br />
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                        <td>
+                            <asp:Label ID="Fnamelbl" runat="server" Text="First Name"></asp:Label> 
+                        </td>
+
+                        <td>
+                             <asp:Label ID="lblFname" runat="server" CssClass="userprofile"></asp:Label>
+                        </td>
+                    </tr>
+                        
+                    <tr>
+                        <td>
+                            <asp:Label ID="Lnamelbl" runat="server" Text="Last Name"></asp:Label> 
+                        </td>
+
+                        <td>
+                            <asp:Label ID="lblLname" runat="server" CssClass="userprofile"></asp:Label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <asp:Label ID="Contactlbl" runat="server" Text="Contact Number"></asp:Label> 
+                        </td>
+
+                        <td>
+                            <asp:Label ID="lblContact" runat="server" CssClass="userprofile"></asp:Label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <asp:Label ID="Addresslbl" runat="server" Text="Address"></asp:Label> 
+                        </td>
+
+                        <td>
+                                <asp:Label ID="lblAddress" runat="server" CssClass="userprofile"></asp:Label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <asp:Label ID="Emaillbl" runat="server" Text="Email"></asp:Label> 
+                        </td>
+
+                        <td>
+                            <asp:Label ID="lblEmail" runat="server" CssClass="userprofile"></asp:Label>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
                 
-            <asp:Label ID="Fnamelbl" runat="server" Text="First Name:"></asp:Label>  <asp:Label ID="lblFname" runat="server"></asp:Label><br />
-            <asp:Label ID="Lnamelbl" runat="server" Text="Last Name:"></asp:Label>   <asp:Label ID="lblLname" runat="server"></asp:Label> <br />
-            <asp:Label ID="Contactlbl" runat="server" Text="Contact Number:"></asp:Label> <asp:Label ID="lblContact" runat="server"></asp:Label> <br />
-            <asp:Label ID="Addresslbl" runat="server" Text="Address:"></asp:Label>  <asp:Label ID="lblAddress" runat="server"></asp:Label><br />
-            <asp:Label ID="Emaillbl" runat="server" Text="Email:"></asp:Label>  <asp:Label ID="lblEmail" runat="server"></asp:Label><br />
+          
+             
             </div>
         </div>
     </form>
 </asp:Content>
 
 
-<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-</asp:Content>
 
