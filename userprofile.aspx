@@ -9,25 +9,18 @@
     <form id="form1" runat="server">
 
     <div class="col-md-12 text-right">
-        <asp:Label ID="lblLoggedin" runat="server"></asp:Label>   <br />  <br />  
-        <asp:Button ID="btnLogout" runat="server" Text="Logout" CssClass="btn btn-primary" />
+        <asp:Label ID="lblLoggedin" runat="server"></asp:Label>   <br /> 
+      
+        <asp:Button ID="btnLogout" runat="server" OnClick="btnLogout_Click" Text="Logout" />
+      
+        <br />  
     </div>
-
          <br />        <br />                   
     
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
 
             
-
-             <ul class="nav nav-tabs"  >
-                  <li class="active"><a href="#Main" data-toggle="tab">User Info</a></li> 
-            <li><a href="#Update" data-toggle="tab">Update password</a></li> 
-            <li><a href="#Add" data-toggle="tab">Order History</a></li> 
-        </ul>
-        <div class="tab-content">
-            <br /><br />
-            <div class="tab-pane active" id="Main"> 
                 <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="678px">
             <AlternatingRowStyle BackColor="White" />
             <EditRowStyle BackColor="#2461BF" />
@@ -40,41 +33,36 @@
             <SortedAscendingHeaderStyle BackColor="#6D95E1" />
             <SortedDescendingCellStyle BackColor="#E9EBEF" />
             <SortedDescendingHeaderStyle BackColor="#4870BE" />
-        </asp:GridView>
+            </asp:GridView>
             </div>
 
-            <div class="tab-pane " id="Update">
-                <div class="col-md-6">
-                    <br />
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">Update password</div>
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <asp:Label ID="lblOldpw" runat="server" Text="Enter old password:"></asp:Label>
+           
+     </div>     
+        
+        <br />
+        <br />
 
-                                <asp:RequiredFieldValidator ID="OldpwRequriementValidator" runat="server" ErrorMessage="*Enter old password" ControlToValidate="txtOldpw" Display="Dynamic" SetFocusOnError="True" Text="*Enter old password" ForeColor="Red"></asp:RequiredFieldValidator>
-                                <asp:TextBox ID="txtOldpw" runat="server" CssClass="form-control"></asp:TextBox>
-                            </div>
+    <div class="row">
+       <div class="col-md-8 col-md-offset-2">
+           <div><a href="myaccount.aspx"><div class="col-md-3 box"> My Account<br /><span class="glyphicon glyphicon-user"></span></div></a></div>
+           <div><a href="updateemail.aspx"><div class="col-md-3 box">Update Email<br /><span class="glyphicon glyphicon-envelope"></span></div></a></div>
+           <div class="col-md-3 box">Update Password<br /><span class="glyphicon glyphicon-pencil"></span></div>
+            <div class="col-md-3 box">Order Details<br /><span class=" glyphicon glyphicon-menu-hamburger"></span></div>  
+       </div>
 
-                            <div class="form-group">
-                                <asp:Label ID="lblNewpw" runat="server" Text="Enter new password:"></asp:Label>
+        <br />
+        <br />
 
-                                <asp:RequiredFieldValidator ID="NewpwRequiredValidator" runat="server" ErrorMessage="*Enter new password" ControlToValidate="txtNewpw" Display="Dynamic" SetFocusOnError="True" Text="*Enter new password" ForeColor="Red"></asp:RequiredFieldValidator>
-                                <asp:TextBox ID="txtNewpw" runat="server" CssClass="form-control"></asp:TextBox>
-                            </div>
-
-                            <asp:Button ID="btnUpdatepw" runat="server" Text="Update" CssClass="btn btn-primary" OnClick="btnUpdatepw_Click" />
-                            <asp:Label ID="lblResult" runat="server"></asp:Label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="tab-pane" id="Add"> </div>
-        </div>
+         <div class="col-md-8 col-md-offset-2">
+            <div><a href="#"><div class="col-md-3 box">Delete Account<br /><span class="glyphicon glyphicon-remove"></span></div></a></div>
+            <div><div class="col-md-3 box">Rent out your vehicle<br /><span class="glyphicon glyphicon-road"></span></div></div>
+            <div><div class="col-md-3 box">Rent out your vehicle<br /><span class="glyphicon glyphicon-road"></span></div></div>
+            <div><div class="col-md-3 box">Comments<br /><span class="glyphicon glyphicon-comment"></span></div></div>
+       </div>
     </div>
-        </div>
+
+            
+     
     
 
     </form>
