@@ -21,7 +21,8 @@ public partial class Default2 : System.Web.UI.Page
         {
            
             Session["username"] = txtEmail.Text;
-            FormsAuthentication.RedirectFromLoginPage(txtEmail.Text, false);
+            Response.Redirect("~/userprofile.aspx");
+            //FormsAuthentication.RedirectFromLoginPage(txtEmail.Text, false);
         }
         else
         {
@@ -59,4 +60,5 @@ public partial class Default2 : System.Web.UI.Page
         }
 
     }
+   
 }
