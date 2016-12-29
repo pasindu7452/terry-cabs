@@ -2,6 +2,12 @@
 
 
 /* every title is having this class */
+
+.userprofile{
+    color:#8b9dc3;
+}
+
+
 .box {
       color:white;
       height:100px;
