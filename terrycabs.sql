@@ -99,7 +99,8 @@ END
 CREATE PROCEDURE spUpdatepassword
 @email nvarchar(250),
 @oldpass nvarchar(100),
-@newpass nvarchar(100)
+@newpass nvarchar(100),
+@status int out
 AS
 BEGIN
  DECLARE @count  int
@@ -107,6 +108,11 @@ BEGIN
  IF @count=1
  BEGIN
 	UPDATE tblUser SET password=@newpass WHERE email=@email AND password=@oldpass
+	SET @status=1
+ END
+ IF @count != 1
+ BEGIN
+	SET @status=0
  END
 END
 
