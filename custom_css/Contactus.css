@@ -1,8 +1,13 @@
-﻿
+﻿body{
+    background-color:#ccccff;
+    font:calibri;
+    
+}
+
 #contact {
 	padding-top: 40px;
 	padding-bottom: 40px;
-    background-color:white;
+    background-color:#ccccff;
 }
 
 #contact h2 {
