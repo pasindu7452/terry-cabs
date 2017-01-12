@@ -4,14 +4,81 @@
     
 }
 
-.signinbox{
-    position:relative;
-    top:100px;
-    align-self:center;
-}
 
-.signinbutton{
-    position:relative;
-    width:80%;
-    bottom:10px;
+
+.block1 {
+  position: relative;
+  background:#ccccff;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  padding:20px;
+}
+.form1 h2 {
+  margin: 0 0 20px;
+  color: #003366;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+}
+ .mysty {
+  outline: none;
+  display: block;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  margin: 0 0 20px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  font-weight: 400;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.mylb1{
+    font-family:Calibri;
+    margin: 0 0 20px;
+    color:#003366 ;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+.mysty:focus {
+  border: 1px solid #33b5e5;
+  color: #333333;
+}
+.mybtn{
+  font-family:Calibri;
+  font-weight:500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background: #33b5e5;
+  width: 100%;
+  border: 0;
+  padding: 5px;
+  color: #ffffff;
+  
+}
+.mybtn:hover {
+ background: #178ab4;
+
+}
+.pwfor {
+    padding:5px 5px !important;
+    font-family:Calibri !important;
+    font-size:12px !important;
+    cursor:pointer !important;
+    
+
+}
+.HyperLink1 {
+    color:#003366;
+    font-family:Calibri !important;
+    
+}
+.panel-body{
+    background:#337ab7;
+
 }
