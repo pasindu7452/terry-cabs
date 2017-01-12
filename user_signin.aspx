@@ -8,12 +8,13 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="PageBody1" Runat="Server">
     <div class="row">
-        <div class="col-md-4 col-md-offset-4 signinbox">
+        <br /><br />
+        <div class="col-md-4 col-md-offset-1 signinbox">
             <!--Sign In Form-->
             <form runat="server">  
                 <div class=" panel panel-primary">
                     <div class="panel-heading title">
-                        <h1>User Signin</h1>
+                        <p>U<small>SER SIGNUP</small></p><br />
                     </div>
 
                     <div class="panel-body form_label">
@@ -69,6 +70,9 @@
         <br /><br />
         <asp:Label ID="lblMessage" runat="server"></asp:Label>
         
+        </div>
+        <div class="col-md-5 col-md-offset-1 signinbox">
+            <img alt="signinimage" src="images/signiinimage.png" width="100%" height="auto"/>
         </div>
     </div>
 </asp:Content>
