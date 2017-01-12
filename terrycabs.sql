@@ -80,6 +80,45 @@ END
 select * from tblUser
 
 
+--stored procedure to update user email
+
+CREATE PROCEDURE spUpdateemail
+@old_email nvarchar(250),
+@new_email nvarchar(250)
+AS
+BEGIN
+	DECLARE @count int
+	SELECT @count=COUNT(email) FROM tblUser WHERE email=@old_email
+	IF @count=1
+	BEGIN
+		UPDATE tblUser SET email=@new_email WHERE email=@old_email
+	END
+END
+
+--stored procedure to update user password
+CREATE PROCEDURE spUpdatepassword
+@email nvarchar(250),
+@oldpass nvarchar(100),
+@newpass nvarchar(100),
+@status int out
+AS
+BEGIN
+ DECLARE @count  int
+ SELECT @count=COUNT(email) FROM tblUser WHERE email=@email AND password=@oldpass
+ IF @count=1
+ BEGIN
+	UPDATE tblUser SET password=@newpass WHERE email=@email AND password=@oldpass
+	SET @status=1
+ END
+ IF @count != 1
+ BEGIN
+	SET @status=0
+ END
+END
+
+
+
+
 
 
 

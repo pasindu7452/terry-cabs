@@ -13,35 +13,32 @@ public partial class Default2 : System.Web.UI.Page
     
     protected void Page_Load(object sender, EventArgs e)
     {
-        lblLoggedin.Text = "you are logged in as :" + Convert.ToString(Session["username"]);
-        string user = Convert.ToString(Session["username"]);
-        string cs = ConfigurationManager.ConnectionStrings["dbex"].ConnectionString;
 
-        using (SqlConnection con = new SqlConnection(cs))
+        if(Session["username"]==null)
         {
-            con.Open();
-            //SqlCommand cmd=new SqlCommand("SELECT * FROM tblUser WHERE email = "+user,con);
-            SqlDataAdapter da = new SqlDataAdapter("spGetuser", con);
-            da.SelectCommand.CommandType = System.Data.CommandType.StoredProcedure;
-
-            da.SelectCommand.Parameters.AddWithValue("@email", user);
-
-
-            DataSet ds = new DataSet();
-            da.Fill(ds);
-            GridView1.DataSource = ds;
-            GridView1.DataBind();
-
+            Response.Redirect("~/user_signin.aspx");
         }
-
-        
-
-
-
-
+       else
+        {
+            lblLoggedin.Text = "you are logged in as :" + Convert.ToString(Session["username"]);
+            string user = Convert.ToString(Session["username"]);
+        }
+                             
     }
-    protected void form1_Load(object sender, EventArgs e)
+
+
+    
+
+
+    protected void btnLogout_Click(object sender, EventArgs e)
     {
-
+        Session["username"] = null;
+        if (Session["username"] == null)
+        {
+            Response.Redirect("~/user_signin.aspx");
+            
+        }
+       
     }
+ 
 }

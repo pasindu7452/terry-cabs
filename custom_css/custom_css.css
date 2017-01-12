@@ -2,6 +2,41 @@
 
 
 /* every title is having this class */
+
+.userprofile{
+    color:#8b9dc3;
+}
+
+
+.box {
+      color:white;
+      height:100px;
+      width:200px;
+      background-color:#4169e1;
+    text-align:center;
+    font-weight:bold;
+    padding:20px;
+    margin-right:10px;
+    margin-bottom:10px;
+    text-decoration:none;
+}
+
+.box:hover {
+      color:white;
+      height:100px;
+      width:200px;
+      background-color:#643EBF;
+    text-align:center;
+    font-weight:bold;
+    padding:20px;
+    margin-right:10px;
+    margin-bottom:10px;
+}
+
+.glyphicon {
+    font-size: 50px;
+}
+
 .title
 {
     color:#828282;
@@ -26,12 +61,11 @@
 }*/
 
 /* css class for label in the forms*/
-.form_label
-{
-    color:#828282;
+.form_label{ color:#828282;
     font-weight:bold;
-    font-size:12px;
-}
+    font-size:12px;}
+   
+
 
 .footer{
     position:relative;
@@ -114,5 +148,6 @@
     position:relative;
     top:50px;
 }
+
 
 
