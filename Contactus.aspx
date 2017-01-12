@@ -3,8 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <title>Contact Us</title>
     
-     <link href="custom_css/Contactus.css?v=2" rel="stylesheet" type="text/css" />
-    <link href="custom_css/Contactus.css?=v1" rel="stylesheet" type="text/css" />
+     <link href="custom_css/Contactus.css?v=3" rel="stylesheet" type="text/css" />
+    
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="PageBody1" Runat="Server">
@@ -15,19 +15,23 @@
     	<div class="container-fluid">
     		<h2>Contact Us</h2>  
     		
-            <p>We are looking fowerd to hear from you.</p>
+            <p>We are looking forward to hear from you.</p>
     		<!--Contct us feed back form-->
             <div class="col-md-5">
+
                 <form runat="server">
 
-               
+               <!--Name-->
+
                 <div class="form-group">
                 <asp:Label ID="Label1" runat="server" Text="Name :"></asp:Label>
-                <asp:RequiredFieldValidator ID="nameFieldValidator1" runat="server" ErrorMessage="*Name Field Cannot be EMPTY" ControlToValidate="Name" ValidationGroup="save" Display="Dynamic" ForeColor="Red">Name field cannot be empty</asp:RequiredFieldValidator>    
+                <asp:RequiredFieldValidator ID="nameFieldValidator1" runat="server" ErrorMessage="*Name Field Cannot be EMPTY" ControlToValidate="Name" 
+                 ValidationGroup="save" Display="Dynamic" ForeColor="Red">Name field cannot be empty</asp:RequiredFieldValidator>    
                  <asp:TextBox ID="Name" runat="server"  CssClass="form-control txtset"></asp:TextBox>   
                 </div>
 
-                    
+                   <!--Email--> 
+
                 <div class="form-group">
             <asp:Label ID="em" runat="server" Text="Email :"></asp:Label>
             <asp:RequiredFieldValidator ID="EmailRequiredFieldValidator1" runat="server" 
@@ -40,20 +44,31 @@
             <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control txtset"></asp:TextBox>
            </div>
 
+
+                <!--Subject-->
              <div class="form-group">
                         <asp:Label ID="Label2" runat="server" Text="Subject :"></asp:Label>
-                        <asp:RequiredFieldValidator ID="subjectFieldValidator1" runat="server" ErrorMessage="*Subject field cannot be empty" ControlToValidate="subject" ForeColor="Red" ValidationGroup="save"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="subjectFieldValidator1" runat="server" ErrorMessage="*Subject field cannot be empty" 
+                            ControlToValidate="subject" ForeColor="Red" ValidationGroup="save"></asp:RequiredFieldValidator>
                         <asp:TextBox ID="subject" runat="server" CssClass="form-control txtset "></asp:TextBox>
-                    </div>  
+                    </div>
+                    
+                    
+                      
+                    <!--Description-->
+
                     
                     <div class="form-group">
 
                         <asp:Label ID="Label3" runat="server" Text="Description :"></asp:Label>
-                        <asp:RequiredFieldValidator ID="descriptionFieldValidator1" runat="server" ErrorMessage="*Description field cannot be empty" ForeColor="red" ControlToValidate="description" ValidationGroup="save"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="descriptionFieldValidator1" runat="server" ErrorMessage="*Description field cannot be empty" 
+                            ForeColor="red" ControlToValidate="description" ValidationGroup="save"></asp:RequiredFieldValidator>
 
                         <asp:TextBox ID="description" runat="server" CssClass="form-control txtset des1" TextMode="MultiLine" Rows="12"></asp:TextBox>
-                    </div>  
+                    </div>
                     
+                      
+                    <!--submit button-->
                     <div class="form-group">
 
                         <asp:Button ID="Button1" runat="server" Text="Submit"  CssClass="btn btn-primary" OnClick="Button1_Click"/>
@@ -125,24 +140,30 @@
         
             <div class="row">
            
-            <div class="col-md-2">
-                <p id="p1">adress branch no1</p>
-                <p id="p1">adress line1</p>
-                <p id="p1">adress line2</p>
-                <p id="p1">adress  line3</p>
+            <div class="col-md-2 col-md-offset-2">
+                <h4>Main Branch</h4>
+                <p id="p1">NO 234,</p>
+                <p id="p1">Kandewatte Road,</p>
+                <p id="p1">Polgasowita.</p>
+                <p id="p1">Mobile:+94 775691234</p>
+                <p id="p1">Hotline:+9411 4871871</p>
             </div>
-             <div class="col-md-2">
-                 <p id="p1">adress branch no2</p>
-                 <p id="p1">adress line1</p>
-                 <p id="p1">adress line2</p>
-                 <p id="p1">adress line3</p>
+             <div class="col-md-2 col-md-offset-2">
+                 <h4>Kegalle Branch</h4>
+                 <p id="p1">NO 23/3,</p>
+                 <p id="p1">New Town,</p>
+                 <p id="p1">Kegalle.</p>
+                 <p id="p1">Mobile:+94 778563124</p>
+                 <p id="p1">Genaral:+94 355326987</p>
                  
             </div>
-                 <div class="col-md-2">
-                 <p id="p1">adress branch no3</p>
-                 <p id="p1">adress line1</p>
-                 <p id="p1">adress line2</p>
-                 <p id="p1">adress line3</p>
+                 <div class="col-md-2 col-md-offset-2">
+                     <h4>Paliyagoda Branch</h4>
+                 <p id="p1">NO 890/3,</p>
+                 <p id="p1">Kandy Road,</p>
+                 <p id="p1">Paliyagoda,</p>
+                 <p id="p1">Mobile:+94 778965231</p>
+                 <p id="p1">Genaral:+94 112864789</p>
             </div>
            </div>
 

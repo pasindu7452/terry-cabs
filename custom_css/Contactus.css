@@ -11,9 +11,9 @@
 }
 
 #contact h2 {
-	font-size: 28px;
+	font-size: 30px;
 	text-transform: uppercase;
-	font-family: 'Noto Sans', sans-serif;
+	font-family: Calibri;
 	letter-spacing: 1px;
 	font-weight: 600;
 	color: #000;
@@ -85,8 +85,8 @@
 	height: 100%;
 }
 
-#p1{text-align: left;
-    font-family: 'PT Sans', sans-serif;
+#p1{text-align: right;
+    font-family: Calibri;
 	font-size: 17px;
 	color: #000;
     width:auto;
@@ -99,7 +99,7 @@ iframe{
 
 #r1{
     padding: 30px;
-    background-color:darkslategray;
+    background-color:transparent;
     height:inherit;
 }
 
@@ -134,3 +134,10 @@ iframe{
  .txtset{
      width:400px;
  }
+ .footer{
+     top:5px;
+ }
+#contact p{
+    font-family:Calibri;
+    font-size:25px;
+}
