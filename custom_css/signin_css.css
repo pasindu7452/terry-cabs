@@ -1,0 +1,17 @@
+﻿body{
+    background-color:#ccccff;
+    font:calibri;
+    
+}
+
+.signinbox{
+    position:relative;
+    top:100px;
+    align-self:center;
+}
+
+.signinbutton{
+    position:relative;
+    width:80%;
+    bottom:10px;
+}
