@@ -24,6 +24,19 @@ CREATE TABLE tblComment
 
 )
 
+--created table for the rent requests
+CREATE TABLE tblRent_req
+(
+[id] int IDENTITY(1,1)PRIMARY KEY,
+[first_name] nvarchar (500) not null,
+[email] nvarchar(250) not null,
+[date_time]	datetimeoffset not null, 
+[type] varchar(5)not null,
+[brand] varchar(10)not null,
+[model] varchar(15)not null,
+[details] varchar(250)
+)
+
 --stored procedure to signup new users
 
 CREATE PROCEDURE spAddUser
@@ -140,6 +153,24 @@ INSERT INTO tblComment VALUES (@firstname,@email,@date,@comment)
 END
  
  SELECT * FROM tblComment
+
+
+ --stored procedure to save rent_request
+ CREATE PROCEDURE spRent_req
+ @email nvarchar (100),
+ @date datetime,
+ @type varchar(5),
+ @brand varchar(10),
+ @model varchar(15),
+ @details varchar(250)
+ AS 
+ BEGIN
+ DECLARE @firstname nvarchar(50)
+ SELECT @firstname=u.first_name FROM tblUser u WHERE u.email=@email
+ INSERT INTO tblRent_req VALUES (@firstname,@email,@date,@type,@brand,@model,@details)
+ END
+
+ SELECT * FROM tblRent_req
 
 
 
