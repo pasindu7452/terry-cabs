@@ -98,7 +98,7 @@
         <!--End of Content-->
         
 
-       <%-- <!--Footer Section-->
+       <!--Footer Section-->
         <div class="container-fluid footer">
             <nav class="navbar-footer">
                  
@@ -189,7 +189,6 @@
             </nav>
         </div>
         <!--End of Footer Section-->
-           --%>
             
     
 
