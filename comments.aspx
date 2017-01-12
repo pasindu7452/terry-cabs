@@ -18,6 +18,7 @@
             <div class="col-md-6 col-md-offset-3">
 
                 <asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>
+                <asp:Label ID="lblMessage2" runat="server" ForeColor="#009900"></asp:Label>
 
                <div class="form-group">
                             <asp:Label ID="lblComment" runat="server" Text="Please type your Comment:"></asp:Label>
