@@ -13,6 +13,17 @@ CREATE TABLE tblUser
 [password] nvarchar(250) not null
 )
 
+--created table for the user comments
+CREATE TABLE tblComment
+(
+[id] int IDENTITY(1,1)PRIMARY KEY,
+[first_name] nvarchar (500) not null,
+[email] nvarchar(250) not null,
+[date_time]	datetimeoffset not null, 
+[comment] varchar(1000)not null
+
+)
+
 --stored procedure to signup new users
 
 CREATE PROCEDURE spAddUser
@@ -116,9 +127,19 @@ BEGIN
  END
 END
 
-
-
-
+--stored procedure to save user comment
+CREATE PROCEDURE spAddcomment
+@email nvarchar(250),
+@date datetimeoffset,
+@comment varchar(1000)
+AS 
+BEGIN
+DECLARE @firstname nvarchar(50)
+SELECT @firstname=u.first_name FROM tblUser u WHERE u.email=@email
+INSERT INTO tblComment VALUES (@firstname,@email,@date,@comment)
+END
+ 
+ SELECT * FROM tblComment
 
 
 
