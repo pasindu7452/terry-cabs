@@ -56,7 +56,8 @@ public partial class Default2 : System.Web.UI.Page
 
                 con.Open();
                 cmd.ExecuteNonQuery();
-                lblMessage.Text = "your comment has successfully saved in database.";
+                lblMessage2.Text = "your comment has successfully saved in database.";
+                txtComment.InnerText = "";
 
             }
 
