@@ -16,7 +16,7 @@
         <div class="col-md-5 col-md-offset-1">
             <div class=" panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="headline">Contact Us</h3>
+                    <h2>C<small class="headline">ONTACT US</small></h2>
                     <br />
                     <p class="headlinepara">We are looking forward to hear from you.</p>
                 </div>
@@ -98,29 +98,29 @@
         </div>
     </div>
                     
-       
-         
-   
     <div id="r1">  
         <div class="row">
-            <div class="col-md-2 col-md-offset-2">
+            <div class="col-md-2 col-md-offset-2 coladd">
                 <h4>Main Branch</h4>
+                <br/>
                 <p id="p1">NO 234,</p>
                 <p id="p1">Kandewatte Road,</p>
                 <p id="p1">Polgasowita.</p>
                 <p id="p1">Mobile:+94 775691234</p>
                 <p id="p1">Hotline:+9411 4871871</p>
             </div>
-            <div class="col-md-2 col-md-offset-2">
+            <div class="col-md-2 col-md-offset-2 coladd">
                 <h4>Kegalle Branch</h4>
+                <br />
                 <p id="p1">NO 23/3,</p>
                 <p id="p1">New Town,</p>
                 <p id="p1">Kegalle.</p>
                 <p id="p1">Mobile:+94 778563124</p>
                 <p id="p1">Genaral:+94 355326987</p>    
             </div>
-            <div class="col-md-2 col-md-offset-2">
+            <div class="col-md-2 col-md-offset-2 coladd">
                 <h4>Paliyagoda Branch</h4>
+                <br />
                 <p id="p1">NO 890/3,</p>
                 <p id="p1">Kandy Road,</p>
                 <p id="p1">Paliyagoda,</p>

@@ -5,6 +5,7 @@
 .panel-primary > .panel-heading{
     background-color:transparent;
     border-color:transparent;
+    
 }
 
 .panel-primary{
@@ -12,16 +13,21 @@
     background-color:#ccccff;
 }
 .title > p {
-    color:#808080;
+    color:#002255;
     font:calibri;
     font-size:40px;
 }
 
 .title{
     font-size:15px;
+    color:#525252;
 }
 .col-md-6 .midcol{
     border-right:5px;
     border-left:5px;
     border-color:#002255;
+}
+
+.form-group{
+    color:#525252;
 }

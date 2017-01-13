@@ -93,3 +93,11 @@ body{
     border-left: 2px solid #003366;
     border-right: 2px solid #003366;
 }
+.text > h2{
+    font-size:40px;
+    color:#003366;
+}
+.abtus {
+    font-size: 30px;
+    color: #575757;
+}

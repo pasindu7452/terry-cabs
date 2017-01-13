@@ -80,10 +80,11 @@
 	height: 100%;
 }
 
-#p1{text-align: right;
+#p1{
+    text-align: left;
     font-family: Calibri;
 	font-size: 17px;
-	color: #000;
+	color: #002255;
     width:auto;
 
 }
@@ -141,10 +142,13 @@ iframe{
     font-family:Calibri;
     font-size:25px;
 }
-
-.headline{
-    font-size:35px;
+h2 {
+    font-size:40px;
     color:#002255;
+}
+.headline{
+    font-size:30px;
+    color:#676666;
 }
 .headlinepara{
     font-size:20px;
@@ -167,4 +171,11 @@ iframe{
 }
 .img11{
     padding-bottom:15px;
+}
+
+.coladd{
+    border-left:4px solid #002255;
+    border-top:4px solid #ffd400;
+    border-radius:15px;
+   
 }
