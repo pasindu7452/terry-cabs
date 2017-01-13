@@ -40,6 +40,7 @@ public partial class Default2 : System.Web.UI.Page
         if (txtComment.InnerText == "")
         {
             lblMessage.Text = "Please enter your comment";
+            lblMessage2.Text = "";
         }
         else
         {
@@ -56,6 +57,7 @@ public partial class Default2 : System.Web.UI.Page
 
                 con.Open();
                 cmd.ExecuteNonQuery();
+                lblMessage.Text = "";
                 lblMessage2.Text = "your comment has successfully saved in database.";
                 txtComment.InnerText = "";
 
