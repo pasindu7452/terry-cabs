@@ -21,7 +21,7 @@
 
     <div class="row">
        <div class="col-md-8 col-md-offset-2">
-           <div><a href=""><div class="col-md-3 box"> Add Vehicle<br /><span class="glyphicon glyphicon-plus"></span></div></a></div>
+           <div><a href="Admin_addvehicle.aspx"><div class="col-md-3 box"> Add Vehicle<br /><span class="glyphicon glyphicon-plus"></span></div></a></div>
            <div><a href=""><div class="col-md-3 box"> View Users<br /><span class="glyphicon glyphicon-user"></span></div></a></div>
            <div><a href=""><div class="col-md-3 box">View comments<br /><span class="glyphicon glyphicon-comment"></span></div></a></div>
             <a href=""><div class="col-md-3 box">Rent out Proposal<br /><span class=" glyphicon glyphicon-briefcase"></span></div>  
