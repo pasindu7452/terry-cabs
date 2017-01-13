@@ -4,14 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-<<<<<<< HEAD
-
-=======
->>>>>>> 243be8d50f4161beeaa85fb7dda34d85b32322a9
 using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Web.Security;
+
 
 
 public partial class Default2 : System.Web.UI.Page
@@ -20,10 +17,7 @@ public partial class Default2 : System.Web.UI.Page
     {
 
     }
-<<<<<<< HEAD
 
-=======
->>>>>>> 243be8d50f4161beeaa85fb7dda34d85b32322a9
 
     protected void Button1_Click(object sender, EventArgs e)
     {
@@ -91,7 +85,3 @@ public partial class Default2 : System.Web.UI.Page
         }
     }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 243be8d50f4161beeaa85fb7dda34d85b32322a9
