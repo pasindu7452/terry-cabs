@@ -109,3 +109,6 @@ body{
     font-size: 30px;
     color: #575757;
 }
+#about .collapse{
+    background-color:transparent;
+}
