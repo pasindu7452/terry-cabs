@@ -15,6 +15,7 @@
         </div>
         
         <div class="row">
+            <br /><br /><br /><br />
             <div class="col-md-6 col-md-offset-3">
 
                 <asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>
@@ -27,6 +28,7 @@
                             <asp:Button ID="btnComment" runat="server" Text="Submit" CssClass="btn btn-primary btn-lg" OnClick="btnComment_Click" />
                </div>
             </div>
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><
         </div>
     </form>
 

@@ -24,7 +24,7 @@
 }
 .collapse{
     
-    background-color:transparent;
+    background-color:#002255;
     border-top:none;
 }
 .collape > .navbar-collapse{
@@ -122,8 +122,9 @@
 .upstyle{
    
    text-decoration:none;
-   color:#fff;
+   color:#ffcc00;
    position:relative;
+   font-size:15px;
    left:20px;
 }
 

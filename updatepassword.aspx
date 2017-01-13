@@ -19,6 +19,7 @@
            </div>
 
         <div class="row">
+            <br /><br /><br /><br />
             <div class="col-md-6 col-md-offset-3">
                 <div class="panel panel-primary">
                     <div class="panel panel-heading">Update password</div>
@@ -44,7 +45,9 @@
                     </div>
                     
                 </div>
+                <br /><br /><br /><br /><br /><br /><br /><br />
             </div>
+            
         </div>
      </form>
 
