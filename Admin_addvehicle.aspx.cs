@@ -4,6 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+<<<<<<< HEAD
+
+=======
+>>>>>>> 243be8d50f4161beeaa85fb7dda34d85b32322a9
 using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
@@ -20,6 +24,10 @@ public partial class Default2 : System.Web.UI.Page
     {
 
     }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 243be8d50f4161beeaa85fb7dda34d85b32322a9
 
 
     protected void Button1_Click(object sender, EventArgs e)
@@ -41,11 +49,53 @@ public partial class Default2 : System.Web.UI.Page
             cmd.ExecuteNonQuery();
 
 
-
-
-
         }
     }
+
+    protected void Button1_Click1(object sender, EventArgs e)
+    {
+        if(TextBox1.Text=="")
+        {
+            Label7.Text = "Please Enter Vehicle Name";
+        }
+        else
+        {
+            if (TextBox2.Text=="")
+            {
+                Label7.Text = "Please Enter Vehicle Type";
+            }
+            else
+            {
+                if (TextBox3.Text == "")
+                {
+                    Label7.Text = "Please Enter Vehicle Brand";
+                }
+                else
+                {
+                    if (TextBox4.Text == "")
+                    {
+                        Label7.Text = "Please Enter Vehicle Model";
+                    }
+                    else
+                    {
+                        if (TextBox5.Text == "")
+                        {
+                            Label7.Text = "Please Enter Vehicle Description";
+                        
+                        }
+                        else
+                        {
+                            if (TextBox7.Text == "")
+                            {
+                                Label7.Text = "Please Enter Vehicle Price";
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+<<<<<<< HEAD
 
 
     protected void Button1_Click1(object sender, EventArgs e)
@@ -53,3 +103,10 @@ public partial class Default2 : System.Web.UI.Page
         
     }
 }
+=======
+}
+<<<<<<< HEAD
+
+=======
+>>>>>>> 243be8d50f4161beeaa85fb7dda34d85b32322a9
+>>>>>>> 57fea17980dc3c8f6636a6e21fb0745262fa4beb

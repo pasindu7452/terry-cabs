@@ -13,7 +13,7 @@
                     <h3>Add Vehicle</h3>
                 </div>
                 <div class="panel-body">
-             
+                    <asp:Label ID="Label7" runat="server" Text=""></asp:Label>
               <div class="form-group">
                   
 <asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
@@ -42,6 +42,7 @@
                 <asp:TextBox ID="TextBox5" runat="server" CssClass="form-control"></asp:TextBox>
                      </div>
 
+<<<<<<< HEAD
                      <div class="form-group">
                 <asp:Label ID="Label9" runat="server" Text="Image:"></asp:Label>
                          <asp:FileUpload ID="FileUpload1" runat="server" />
@@ -50,25 +51,41 @@
 
                  <div >
                      <asp:Button ID="btnAdd" runat="server" Text="ADD" CssClass="btn-primary" OnClick="Button1_Click1" />
+=======
+                    <div class="form-group">
+                <asp:Label ID="Label8" runat="server" Text="Vehicle Price :"></asp:Label>
+                <asp:TextBox ID="TextBox7" runat="server" CssClass="form-control"></asp:TextBox>
+                     </div>
+
+                 <div >
+                     <asp:Button ID="Button1" runat="server" Text="ADD" CssClass="btn btn-primary" OnClick="Button1_Click1" />
+>>>>>>> 57fea17980dc3c8f6636a6e21fb0745262fa4beb
                  </div>
 
                 
                    </div> 
-                </div>>               
+                </div>               
 
             </div>
 
             <div class="col-md-4">
                 <div class="panel panel-primary">
+                    <div class="panel-title">
+                        <h3>Delete Vehicle</h3>
+                    </div>
                     <div class="panel-body">
             <div class="form-group">
                 <asp:Label ID="Label6" runat="server" Text="Vehicle ID :"></asp:Label>
                 <asp:TextBox ID="TextBox6" runat="server" CssClass="form-control"></asp:TextBox>
 
             </div>
+<<<<<<< HEAD
                     
 
             <asp:Button ID="Button2" runat="server" Text="DELETE" CssClass="btn-primary" />
+=======
+            <asp:Button ID="Button2" runat="server" Text="DELETE" CssClass="btn btn-primary" />
+>>>>>>> 57fea17980dc3c8f6636a6e21fb0745262fa4beb
             
          </div> 
                     </div>
