@@ -13,6 +13,28 @@ CREATE TABLE tblUser
 [password] nvarchar(250) not null
 )
 
+--created table for the admins
+CREATE TABLE tblAdmin
+(
+[id] int IDENTITY(1,1) PRIMARY KEY,
+[first_name] nvarchar (500) not null,
+[last_name] nvarchar (500) not null,
+[email] nvarchar(250) not null,
+[password] nvarchar(250) not null
+)
+
+CREATE PROCEDURE spAdmin
+@first varchar(100),
+@last varchar(100),
+@email varchar(100),
+@pass varchar(100)
+AS
+BEGIN 
+INSERT INTO tblAdmin VALUES(@first,@last,@email,@pass)
+END
+
+select * from tblAdmin
+
 --created table for the user comments
 CREATE TABLE tblComment
 (
