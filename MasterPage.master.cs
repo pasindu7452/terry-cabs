@@ -15,7 +15,6 @@ public partial class MasterPage : System.Web.UI.MasterPage
         {
             //Response.Redirect("~/user_signin.aspx");
             lbUserSigned.Enabled = false;
-            NameLable.Enabled = false;
         }
         else
         {

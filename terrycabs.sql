@@ -1,5 +1,6 @@
 --created database
 create database terrycabs
+use terrycabs
 
 --created table for the users
 CREATE TABLE tblUser
