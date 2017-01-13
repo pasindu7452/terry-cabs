@@ -204,6 +204,25 @@ END
  END
 
 
+  --stored procedure to authenticate admin
+CREATE PROCEDURE spAuthadmin
+@email nvarchar(250),
+@password nvarchar(250),
+@status int out
+AS
+BEGIN
+DECLARE @count int
+SELECT @count=COUNT(email) FROM tblAdmin WHERE email=@email AND password=@password
+IF @count=1
+BEGIN
+SET @status=1 
+END
+ELSE
+BEGIN
+SET @status=0
+END
+END
+
 
 
 
