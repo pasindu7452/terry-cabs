@@ -4,26 +4,6 @@
     
 }
 
-
-
-.block1 {
-  position: relative;
-  background:#ccccff;
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  width: 100%;
-  
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
-  padding:20px;
-}
-.form1 h2 {
-  margin: 0 0 20px;
-  color: #003366;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1;
-}
  .mysty {
   outline: none;
   display: block;
@@ -36,6 +16,7 @@
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
+
 .mylb1{
     font-family:Calibri;
     margin: 0 0 20px;
@@ -79,10 +60,17 @@
     
 }
 .panel-body{
-    background:#337ab7;
+    background:#ccccff;
 
 }
+.panel-primary > .panel-heading{
+    background-color:#ccccff;
+    border:none;
+}
+
+
 .title > p {
-    color:#d9d9d9;
-    font:calibri;
-    font-size:40px;
+    color: #178ab4;
+    font: calibri;
+    font-size: 40px;
+}
