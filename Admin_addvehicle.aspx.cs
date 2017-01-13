@@ -8,6 +8,10 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Web.Security;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 243be8d50f4161beeaa85fb7dda34d85b32322a9
 
 public partial class Default2 : System.Web.UI.Page
 {
@@ -15,7 +19,10 @@ public partial class Default2 : System.Web.UI.Page
     {
 
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 243be8d50f4161beeaa85fb7dda34d85b32322a9
 
     protected void Button1_Click(object sender, EventArgs e)
     {
@@ -23,12 +30,12 @@ public partial class Default2 : System.Web.UI.Page
 
         using (SqlConnection con = new SqlConnection(cs))
         {
-            SqlCommand cmd = new SqlCommand("spAdmin",con);
+            SqlCommand cmd = new SqlCommand("spAdmin", con);
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
-            string pass = FormsAuthentication.HashPasswordForStoringInConfigFile(TextBox4.Text,"SHA1");
+            string pass = FormsAuthentication.HashPasswordForStoringInConfigFile(TextBox4.Text, "SHA1");
 
-            cmd.Parameters.AddWithValue("@first",TextBox1.Text);
+            cmd.Parameters.AddWithValue("@first", TextBox1.Text);
             cmd.Parameters.AddWithValue("@last", TextBox2.Text);
             cmd.Parameters.AddWithValue("@email", TextBox3.Text);
             cmd.Parameters.AddWithValue("@pass", pass);
@@ -41,4 +48,8 @@ public partial class Default2 : System.Web.UI.Page
 
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 243be8d50f4161beeaa85fb7dda34d85b32322a9
