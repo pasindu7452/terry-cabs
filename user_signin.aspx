@@ -15,7 +15,7 @@
                 <div class=" panel panel-primary">
                     <div class="panel-heading title">
                         <br />
-                        <p>U<small>SER SIGNIN</small></p>
+                        <p>U<small>USER SIGNIN</small></p>
                     </div>
                     <div class="panel-body form_label">
                         <!--top hedding-->

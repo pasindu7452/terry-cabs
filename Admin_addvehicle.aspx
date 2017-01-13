@@ -15,6 +15,8 @@
                 <div class="panel-body">
              
               <div class="form-group">
+                  
+<asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
                 <asp:Label ID="Label1" runat="server" Text="Vehicle Name :"></asp:Label>
                 <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control"></asp:TextBox>
                 
@@ -39,8 +41,15 @@
                 <asp:Label ID="Label5" runat="server" Text="Vehicle Description :"></asp:Label>
                 <asp:TextBox ID="TextBox5" runat="server" CssClass="form-control"></asp:TextBox>
                      </div>
+
+                     <div class="form-group">
+                <asp:Label ID="Label9" runat="server" Text="Image:"></asp:Label>
+                         <asp:FileUpload ID="FileUpload1" runat="server" />
+                    </div>
+                    
+
                  <div >
-                     <asp:Button ID="Button1" runat="server" Text="ADD" CssClass="btn-primary" />
+                     <asp:Button ID="btnAdd" runat="server" Text="ADD" CssClass="btn-primary" OnClick="Button1_Click1" />
                  </div>
 
                 
@@ -57,6 +66,8 @@
                 <asp:TextBox ID="TextBox6" runat="server" CssClass="form-control"></asp:TextBox>
 
             </div>
+                    
+
             <asp:Button ID="Button2" runat="server" Text="DELETE" CssClass="btn-primary" />
             
          </div> 

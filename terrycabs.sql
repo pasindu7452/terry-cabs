@@ -14,6 +14,20 @@ CREATE TABLE tblUser
 [password] nvarchar(250) not null
 )
 
+
+--created table for the users
+CREATE TABLE tblVehicle
+(
+[id] int IDENTITY(1,1) PRIMARY KEY,
+[name] nvarchar (500) not null,
+[type] nvarchar (500) not null,
+[brand] nvarchar(500) not null,
+[model] nvarchar(500) not null,
+[description] nvarchar(250) not null,
+[image] nvarchar(250) not null
+)
+
+
 --created table for the user comments
 CREATE TABLE tblComment
 (

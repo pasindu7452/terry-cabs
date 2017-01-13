@@ -33,8 +33,8 @@ btn-primary{
 
 .box {
     color:white;
-    height:150px;
-    width:200px;
+    height:100px;
+    width:100px;
     background-color:#4169e1;
     text-align:center;
     font-weight:bold;
@@ -46,8 +46,8 @@ btn-primary{
 
 .box:hover {
     color:white;
-    height:150px;
-    width:200px;
+    height:100px;
+    width:100px;
     background-color:#643EBF;
     text-align:center;
     font-weight:bold;
