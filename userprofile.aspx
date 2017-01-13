@@ -30,7 +30,7 @@
         <br />
 
          <div class="col-md-8 col-md-offset-2">
-            <div><a href="#"><div class="col-md-3 box">Delete Account<br /><span class="glyphicon glyphicon-remove"></span></div></a></div>
+            <div><a href="delete_account.aspx"><div class="col-md-3 box">Delete Account<br /><span class="glyphicon glyphicon-remove"></span></div></a></div>
             <div><a href="rentout_request.aspx"><div class="col-md-3 box">Rent out your vehicle<br /><span class="glyphicon glyphicon-road"></span></div></a></div>
             <div><div class="col-md-3 box">Rent out your vehicle<br /><span class="glyphicon glyphicon-road"></span></div></div>
             <div><a href="comments.aspx"><div class="col-md-3 box">Comments<br /><span class="glyphicon glyphicon-comment"></span></div></a></div>
