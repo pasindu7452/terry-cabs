@@ -65,9 +65,12 @@ public partial class Default2 : System.Web.UI.Page
             outputpara.SqlDbType=System.Data.SqlDbType.Int;
             outputpara.Direction=System.Data.ParameterDirection.Output;
             cmd.Parameters.Add(outputpara);
+           
+                con.Open();
+                cmd.ExecuteNonQuery();
+           
 
-            con.Open();
-            cmd.ExecuteNonQuery();
+            
 
             int stat = int.Parse(outputpara.Value.ToString());
 
