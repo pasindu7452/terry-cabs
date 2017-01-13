@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <title>About Us</title>
     <!--Styling-->
-    <link href="custom_css/aboutus.css" rel="stylesheet" type="text/css" />
+    <link href="custom_css/aboutus.css?v=2" rel="stylesheet" type="text/css" />
     <!--End of Styling-->
  </asp:Content>
 
@@ -98,7 +98,7 @@
                                 </div>
                             </span>
                     
-                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" >
                                 <div class="panel-body">
                                     <!-- Tab content goes here -->
                                     <p>As a major cab service providing company our expectation is give the customer what they are really expecting from us without making 
@@ -116,12 +116,12 @@
                         <div class="panel panel-default">
                             <!--wrap panel heading in span to trigger image change as well as collapse -->
                             <span class="side-tab" data-target="#tab2" data-toggle="tab" role="tab" aria-expanded="false">
-                                <div class="panel-heading" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <div class="panel-heading" role="tab" id="headingTwo" data-toggle="collapse"  data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     <h4 class="panel-title collapsed">"Safety" Always Comes First</h4>
                                 </div>
                             </span>
 
-                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" >
                                 <div class="panel-body">
                                     <!-- Tab content goes here -->
                                     <p>Since it is our duty to give you the best service for the money you paid, we will consider "Safety Of You" as our primary priority.</p>
