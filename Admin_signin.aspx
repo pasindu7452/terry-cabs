@@ -47,7 +47,6 @@
                                  <asp:Button ID="Button1" runat="server" Text="Sign In"  CssClass="mybtn" OnClick="Button1_Click"/>
                                  </div>
                                  <div class="pwfor">
-                                  <asp:HyperLink ID="HyperLink1" Cssclass="HyperLink1" runat="server">Forgot Your Email Or Password?</asp:HyperLink>
                                 </div>
                        
                                 </div>
