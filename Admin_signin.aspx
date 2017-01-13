@@ -19,6 +19,9 @@
                 <div class="form1">
                     <!--top hedding-->
                         <h2>Hello Admin,Sign In to Your Account</h2>
+
+                    <asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>
+
                             <!--signin form-->
                             <div class="form-group"> 
                             <!--email-->

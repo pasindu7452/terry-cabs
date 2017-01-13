@@ -137,7 +137,7 @@
                             <!--wrap panel heading in span to trigger image change as well as collapse -->
                             <span class="side-tab" data-target="#tab3" data-toggle="tab" role="tab" aria-expanded="false">
                                 <div class="panel-heading" role="tab" id="headingThree"  class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <h4 class="panel-title">Mordern Day Facilities</h4>
+                                    <h4 class="panel-title">Modern Day Facilities</h4>
                                 </div>
                             </span>
 

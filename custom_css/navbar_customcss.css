@@ -47,6 +47,7 @@
 
 .dropdown-menu {
      background-color: #2f3343;
+     width:300%;
 }
 
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
@@ -117,5 +118,20 @@
 .navbar-inverse .navbar-nav>.dropdown>a:hover .caret {
     border-bottom-color: #003366;
 }
+
+.upstyle{
+   
+   text-decoration:none;
+   color:#fff;
+   position:relative;
+   left:20px;
+}
+
+.box{
+    width:200px;
+    height:150px;
+}
+
+
 
 
