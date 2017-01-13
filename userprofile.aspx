@@ -8,7 +8,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="PageBody1" Runat="Server">
     <form id="form1" runat="server">
         <div class="row">
-            <div class="col-md-3 text-right col-md-offset-1">
+            <div class="col-md-2 text-right col-md-offset-1">
                     <br /><br />
                     <asp:Label ID="Label1" CssClass="UserInfotxt" runat="server"></asp:Label><br />
                     <asp:Label ID="lblLoggedin" CssClass="UserInfo" runat="server"></asp:Label> <br />
