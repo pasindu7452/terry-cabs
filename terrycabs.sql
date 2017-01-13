@@ -1,6 +1,12 @@
 --created database
 create database terrycabs
 
+drop database terrycabs
+
+use terrycabs
+
+use master
+
 --created table for the users
 CREATE TABLE tblUser
 (
@@ -12,6 +18,8 @@ CREATE TABLE tblUser
 [email] nvarchar(250) not null,
 [password] nvarchar(250) not null
 )
+
+select * from tblUser
 
 --created table for the user comments
 CREATE TABLE tblComment

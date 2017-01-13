@@ -75,6 +75,8 @@
           <ul class="dropdown-menu">
             <li><a href="user_signup.aspx">Sign up</a></li>
              <li><a href="user_signin.aspx">Sign in</a></li>
+             <a class="upstyle" href="userprofile.aspx"><asp:label ID="lbUserSigned" runat="server"></asp:label></a>
+              
           </ul>
         </li>
       </ul>

@@ -20,7 +20,8 @@ public partial class Default2 : System.Web.UI.Page
         }
        else
         {
-            lblLoggedin.Text = "you are logged in as :" + Convert.ToString(Session["username"]);
+            Label1.Text = "You Are Signed-in As:";
+            lblLoggedin.Text = Convert.ToString(Session["username"]);
             string user = Convert.ToString(Session["username"]);
         }
                              

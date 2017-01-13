@@ -6,6 +6,28 @@
 .userprofile{
     color:#8b9dc3;
 }
+.UserInfo{
+    color:#003366;
+    font:Calibri;
+    font-size:20px;
+
+}
+.UserInfotxt{
+    color:#828282;
+    font:Calibri;
+    font-size:15px;
+
+}
+.userinf{
+    font-family:Calibri;
+    font-size:40px;
+    color:#003366;
+
+}
+btn-primary{
+    width:50px;
+    height:25px;
+}
 
 
 .box {
@@ -35,6 +57,7 @@
 
 .glyphicon {
     font-size: 50px;
+    
 }
 
 .title
