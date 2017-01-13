@@ -172,6 +172,16 @@ END
 
  SELECT * FROM tblRent_req
 
+ --stored procedure to delete customer_account
+ CREATE PROCEDURE spDeluser
+ @email nvarchar(100),
+ @pass nvarchar(100)
+ AS 
+ BEGIN
+ DELETE FROM tblUser WHERE email=@email AND password=@pass
+ END
+
+
 
 
 
