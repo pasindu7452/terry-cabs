@@ -11,7 +11,7 @@
 
 <asp:Content ID="Content3" ContentPlaceHolderID="PageBody1" Runat="Server">
 
-    <form id="form1" runat="server">
+    <form class="upemfrom" id="form1" runat="server">
 
          <div class="col-md-12 text-right">
              <asp:Label ID="lblLoggedin" runat="server"></asp:Label>
@@ -22,6 +22,7 @@
         <br />
 
         <div class="row">
+            <br /><br /><br /><br />
             <div class="col-md-6 col-md-offset-3">
                 <div class="panel panel-primary">
                     <div class=" panel-heading">Update Email</div>
@@ -36,8 +37,11 @@
                         </div>
                         <asp:Button ID="btnUpdateemail" runat="server" Text="Update email" CssClass="btn btn-primary" OnClick="btnUpdateemail_Click" />
                     </div>
+                    
                 </div>
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             </div>
+            <br /><br /><br />
         </div>
      </form>
 
