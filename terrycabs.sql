@@ -15,16 +15,15 @@ CREATE TABLE tblUser
 )
 
 
---created table for the users
+--created table for the vehicles
 CREATE TABLE tblVehicle
 (
 [id] int IDENTITY(1,1) PRIMARY KEY,
-[name] nvarchar (500) not null,
 [type] nvarchar (500) not null,
-[brand] nvarchar(500) not null,
-[model] nvarchar(500) not null,
-[description] nvarchar(250) not null,
-[image] nvarchar(250) not null
+[brand] nvarchar (500) not null,
+[model] nvarchar (500) not null,
+[details] nvarchar(500) not null,
+[img] nvarchar(250) not null
 )
 
 
@@ -189,8 +188,18 @@ END
 
 
 
+CREATE PROCEDURE spAddvehicle
+@type nvarchar (500),
+@brand nvarchar (500) ,
+@model nvarchar (500) ,
+@details nvarchar(500) ,
+@img nvarchar(250) 
+AS
+BEGIN
+	INSERT INTO tblVehicle VALUES(@type,@brand,@model,@details,@img)
+END
 
-
+ SELECT * FROM tblVehicle
 
 
 

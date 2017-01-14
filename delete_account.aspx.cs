@@ -8,6 +8,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Web.Security;
+using System.Net;
 using System.Net.Mail;
 
 public partial class Default2 : System.Web.UI.Page
@@ -39,7 +40,25 @@ public partial class Default2 : System.Web.UI.Page
     protected void btnSub_Click(object sender, EventArgs e)
     {
         string user = Convert.ToString(Session["username"]);
-        
+        MailMessage mailmessage = new MailMessage();
+        mailmessage.From = new MailAddress("pasindu745@gmail.com");
+        mailmessage.To.Add("math7452@gmail.com");
+        mailmessage.Subject = "Account deletion!";
+        mailmessage.Body = "Your account of terry cabs has deleted!";
+        mailmessage.IsBodyHtml = true;
+
+        SmtpClient smtp = new SmtpClient();
+        smtp.Host = "smtp.gmail.com";
+        NetworkCredential netcred = new NetworkCredential();
+        netcred.UserName = "pasindu745@gmail.com";
+        netcred.Password = "blackstallion";
+        smtp.UseDefaultCredentials = true;
+        smtp.Credentials = new System.Net.NetworkCredential("pasindu745@gmail.com", "blackstallion");
+        smtp.Port = 587;
+        smtp.EnableSsl = true;
+        smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+        smtp.Send(mailmessage);
+
         if (txtPass.Text=="")
         {
             lblMessage.Text = "*Please enter password";
@@ -61,27 +80,18 @@ public partial class Default2 : System.Web.UI.Page
                 con.Open();
                 cmd.ExecuteNonQuery();
 
-                MailMessage mailmessage = new MailMessage("pasindu745@gmail.com",user);
-                mailmessage.Subject = "Notice!";
-                mailmessage.Body = "You account of tertty cabs is successfully deleted!";
-
-                SmtpClient smtpclient = new SmtpClient("smtp.gmail.com",587);
-                smtpclient.Credentials = new System.Net.NetworkCredential()
-                {
-                    UserName = "pasindu745@gmail.com ",
-                    Password = "blackstallion"
-                };
-
-                smtpclient.EnableSsl = true;
-                smtpclient.Send(mailmessage);
+                
+               
                 
                 Response.Redirect("~/user_signup.aspx");
 
 
             }
+
+           
         }
 
-                
-                
+
+
     }
 }

@@ -4,15 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-<<<<<<< HEAD
-
-=======
->>>>>>> 243be8d50f4161beeaa85fb7dda34d85b32322a9
 using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Web.Security;
 using System.IO;
+
 
 
 
@@ -24,89 +21,50 @@ public partial class Default2 : System.Web.UI.Page
     {
 
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> 243be8d50f4161beeaa85fb7dda34d85b32322a9
 
 
-    protected void Button1_Click(object sender, EventArgs e)
+
+
+
+
+
+
+
+    protected void btnAdd_Click(object sender, EventArgs e)
     {
-        string cs = ConfigurationManager.ConnectionStrings["dbex"].ConnectionString;
-
-        using (SqlConnection con = new SqlConnection(cs))
+        if (txtType.Text=="" || txtBrand.Text=="" || txtModel.Text=="" || txtDetails.InnerText=="" || !FileUpload1.HasFile)
         {
-            SqlCommand cmd = new SqlCommand("spAdmin", con);
-            cmd.CommandType = System.Data.CommandType.StoredProcedure;
-
-            string pass = FormsAuthentication.HashPasswordForStoringInConfigFile(TextBox4.Text, "SHA1");
-
-            cmd.Parameters.AddWithValue("@first", TextBox1.Text);
-            cmd.Parameters.AddWithValue("@last", TextBox2.Text);
-            cmd.Parameters.AddWithValue("@email", TextBox3.Text);
-            cmd.Parameters.AddWithValue("@pass", pass);
-            con.Open();
-            cmd.ExecuteNonQuery();
-
-
-        }
-    }
-
-    protected void Button1_Click1(object sender, EventArgs e)
-    {
-        if(TextBox1.Text=="")
-        {
-            Label7.Text = "Please Enter Vehicle Name";
+            lblMessage.Text = "*Please fill all the fields!";
         }
         else
         {
-            if (TextBox2.Text=="")
+            string str = FileUpload1.FileName;
+            FileUpload1.PostedFile.SaveAs(Server.MapPath(".")+"//uploads//"+str);
+            string path = "~//uploads//" + str.ToString();
+
+            string cs = ConfigurationManager.ConnectionStrings["dbex"].ConnectionString;
+            using (SqlConnection con = new SqlConnection(cs))
             {
-                Label7.Text = "Please Enter Vehicle Type";
+                SqlCommand cmd = new SqlCommand("spAddvehicle", con);
+                
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@type",txtType.Text);
+                cmd.Parameters.AddWithValue("@brand",txtBrand.Text);
+                cmd.Parameters.AddWithValue("@model",txtModel.Text);
+                cmd.Parameters.AddWithValue("@details",txtDetails.InnerText);
+                cmd.Parameters.AddWithValue("@img", path);
+
+                con.Open();
+                cmd.ExecuteNonQuery();
+
+                lblMessage.Text = "";
+                lblMessage2.Text = "record has successfully added to the database";
+
             }
-            else
-            {
-                if (TextBox3.Text == "")
-                {
-                    Label7.Text = "Please Enter Vehicle Brand";
-                }
-                else
-                {
-                    if (TextBox4.Text == "")
-                    {
-                        Label7.Text = "Please Enter Vehicle Model";
-                    }
-                    else
-                    {
-                        if (TextBox5.Text == "")
-                        {
-                            Label7.Text = "Please Enter Vehicle Description";
-                        
-                        }
-                        else
-                        {
-                            if (TextBox7.Text == "")
-                            {
-                                Label7.Text = "Please Enter Vehicle Price";
-                            }
-                        }
-                    }
-                }
-            }
+
         }
     }
-<<<<<<< HEAD
-
-
-    protected void Button1_Click1(object sender, EventArgs e)
-    {
-        
-    }
 }
-=======
-}
-<<<<<<< HEAD
 
-=======
->>>>>>> 243be8d50f4161beeaa85fb7dda34d85b32322a9
->>>>>>> 57fea17980dc3c8f6636a6e21fb0745262fa4beb
+
