@@ -38,6 +38,43 @@ CREATE TABLE tblRent_req
 [details] varchar(250)
 )
 
+CREATE TABLE tblAdmin
+(
+[id] int IDENTITY(1,1) PRIMARY KEY,
+[first_name] nvarchar (500) not null,
+[last_name] nvarchar (500) not null,
+[email] nvarchar(250) not null,
+[password] nvarchar(250) not null
+)
+
+CREATE PROCEDURE spAdmin
+@first varchar(100),
+@last varchar(100),
+@email varchar(100),
+@pass varchar(100)
+AS
+BEGIN 
+INSERT INTO tblAdmin VALUES(@first,@last,@email,@pass)
+END
+
+CREATE PROCEDURE spAuthadmin
+@email nvarchar(250),
+@password nvarchar(250),
+@status int out
+AS
+BEGIN
+DECLARE @count int
+SELECT @count=COUNT(email) FROM tblAdmin WHERE email=@email AND password=@password
+IF @count=1
+BEGIN
+SET @status=1 
+END
+ELSE
+BEGIN
+SET @status=0
+END
+END
+
 --stored procedure to signup new users
 
 CREATE PROCEDURE spAddUser
@@ -69,6 +106,40 @@ DECLARE @count int
 		INSERT INTO tblUser VALUES (@fname,@lname,@contact,@address,@email,@password)
 	END
 END
+
+
+
+
+
+CREATE PROCEDURE spAddadmin
+@fname nvarchar(500),
+@lname nvarchar (500),
+
+@email nvarchar(250),
+@password nvarchar(250),
+@status int out
+AS
+BEGIN
+DECLARE @count int
+	SELECT @count=COUNT(email) FROM tblUser WHERE email=@email
+	
+	IF (@fname ='')OR(@lname='')OR(@email='')OR(@password='')
+	BEGIN
+		SET @status=0
+	END
+	
+	ELSE IF @count>0
+	BEGIN
+		SET @status =-1
+	END
+	
+	ELSE
+	BEGIN
+		SET @status=1
+		INSERT INTO tblAdmin VALUES (@fname,@lname,@email,@password)
+	END
+END
+
 
 --stored procedure to authenticate users
 CREATE PROCEDURE spAuthenticateUsers
@@ -179,4 +250,5 @@ END
 
 
 
-
+ 
+select * from tblUser
