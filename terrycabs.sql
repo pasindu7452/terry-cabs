@@ -275,3 +275,11 @@ END
 
  
 select * from tblUser
+
+
+CREATE PROCEDURE spGetVehicle
+@type nvarchar(10)
+AS
+BEGIN
+ SELECT * FROM tblVehicle WHERE [type] LIKE @type 
+END

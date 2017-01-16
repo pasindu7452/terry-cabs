@@ -62,23 +62,23 @@
                 <!--Navigaton Bar Items-->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-<<<<<<< HEAD
+
                         <li><a href="packages.aspx">Packages <span class="sr-only">(current)</span></a></li>
                         <li><a href="#">Vehicles</a></li>
-=======
+
                         <li><a href="Vehicles_vans.aspx">Vans <span class="sr-only">(current)</span></a></li>
                         <li><a href="Vehicles_cars.aspx">Cars</a></li>
->>>>>>> b908fd0e391fa6a92baaf83fab42378d9a4d5774
+
                         <li><a href="Aboutus.aspx">About Us</a></li>
                         <li><a href="Contactus.aspx">Contact Us</a></li>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
-<<<<<<< HEAD
+
         <li><a href="#">Reservations</a></li>
-=======
+
         <li><a href="userprofile.aspx"><asp:label ID="LabelUser" CssClass="userlabenav" runat="server"></asp:label></a></li>
->>>>>>> b908fd0e391fa6a92baaf83fab42378d9a4d5774
+
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User <span class="caret"></span></a>
           <ul class="dropdown-menu">
