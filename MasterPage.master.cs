@@ -14,14 +14,16 @@ public partial class MasterPage : System.Web.UI.MasterPage
         if (Session["username"] == null)
         {
             //Response.Redirect("~/user_signin.aspx");
-            lbUserSigned.Enabled = false;
+           
+            LabelUser.Enabled = false;
         }
         else
         {
 
             //lblLoggedin.Text = "you are logged in as :" + Convert.ToString(Session["username"]);
             string user = Convert.ToString(Session["username"]);
-            lbUserSigned.Text = Convert.ToString(Session["username"]);
+           
+            LabelUser.Text = Convert.ToString(Session["username"]);
         }
 
     }

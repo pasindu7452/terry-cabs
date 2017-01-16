@@ -110,5 +110,9 @@ body{
     color: #575757;
 }
 #about .collapse{
+<<<<<<< HEAD
+    background-color:transparent;
+=======
     background-color:white;
+>>>>>>> 3c9afb5d49e6d0a71709b7d4d1f9e9836f519975
 }
